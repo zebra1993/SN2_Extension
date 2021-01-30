@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>W:\KicadStuff\SN_Module\SNModule\SNModule.sch</source>
-    <date>13.01.2021 18:56:57</date>
+    <source>W:\KicadStuff\SN_Module\SN2_Extensio\SNModule.sch</source>
+    <date>27.01.2021 20:13:05</date>
     <tool>Eeschema (5.1.9)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
+        <title>Snapmaker2 CANbus extension</title>
         <company/>
-        <rev/>
-        <date/>
+        <rev>1</rev>
+        <date>2021-01-16</date>
         <source>SNModule.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -19,10 +19,10 @@
     </sheet>
     <sheet number="2" name="/ADC_SPI/" tstamps="/5FF0E871/">
       <title_block>
-        <title/>
+        <title>Snapmaker2 CANbus extension</title>
         <company/>
-        <rev/>
-        <date/>
+        <rev>1</rev>
+        <date>2021-01-16</date>
         <source>ADC.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -35,6 +35,12 @@
     <comp ref="U1">
       <value>Teensy4.0</value>
       <footprint>TeensyFootprints:Teensy40_THT</footprint>
+      <datasheet>https://www.pjrc.com/store/teensy40.html</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Adafruit</field>
+        <field name="Manufacturer_Part_Number">4323</field>
+        <field name="Mouser Part Number">485-4323</field>
+      </fields>
       <libsource lib="Teensy_Component" part="Teensy4.0" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEB52F0</tstamp>
@@ -42,7 +48,12 @@
     <comp ref="U3">
       <value>MCP2562-E-P</value>
       <footprint>Housings_DIP:DIP-8_W7.62mm_Socket</footprint>
-      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/268/20005167C-1512552.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Microchip Technology </field>
+        <field name="Manufacturer_Part_Number">MCP2562-E/P</field>
+        <field name="Mouser Part Number">579-MCP2562-E/P</field>
+      </fields>
       <libsource lib="Interface_CAN_LIN" part="MCP2562-E-P" description="High-Speed CAN Transceiver, 1Mbps, 5V supply, Vio pin, -40C to +125C, DIP-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEB93F9</tstamp>
@@ -50,7 +61,12 @@
     <comp ref="J1">
       <value>DB9_Male_MountingHoles</value>
       <footprint>SamacSys_Parts:D09P23A4GV00LF</footprint>
-      <datasheet> ~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/18/c01-8646-0743-1303348.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Amphenol FCI </field>
+        <field name="Manufacturer_Part_Number">D09P23A4GV00LF </field>
+        <field name="Mouser Part Number">649-D09P23A4GV00LF</field>
+      </fields>
       <libsource lib="Connector" part="DB9_Male_MountingHoles" description="9-pin male D-SUB connector, Mounting Hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEC0DAA</tstamp>
@@ -58,7 +74,12 @@
     <comp ref="J2">
       <value>DB9_Female_MountingHoles</value>
       <footprint>SamacSys_Parts:D09S23A4GV00LF</footprint>
-      <datasheet> ~</datasheet>
+      <datasheet>https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c01-8646-0755.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Amphenol FCI </field>
+        <field name="Manufacturer_Part_Number">D09S23A4GV00LF </field>
+        <field name="Mouser Part Number"> 649-D09S23A4GV00LF</field>
+      </fields>
       <libsource lib="Connector" part="DB9_Female_MountingHoles" description="9-pin female D-SUB connector, Mounting Hole"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEDC114</tstamp>
@@ -66,34 +87,15 @@
     <comp ref="U2">
       <value>MCP2562-E-P</value>
       <footprint>Housings_DIP:DIP-8_W7.62mm_Socket</footprint>
-      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/268/20005167C-1512552.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Microchip Technology </field>
+        <field name="Manufacturer_Part_Number">MCP2562-E/P</field>
+        <field name="Mouser Part Number">579-MCP2562-E/P</field>
+      </fields>
       <libsource lib="Interface_CAN_LIN" part="MCP2562-E-P" description="High-Speed CAN Transceiver, 1Mbps, 5V supply, Vio pin, -40C to +125C, DIP-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEB8662</tstamp>
-    </comp>
-    <comp ref="D4">
-      <value>LED</value>
-      <footprint>LEDs:LED_D5.0mm_FlatTop</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60090A09</tstamp>
-    </comp>
-    <comp ref="D3">
-      <value>LED</value>
-      <footprint>LEDs:LED_D5.0mm_FlatTop</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6009072B</tstamp>
-    </comp>
-    <comp ref="D2">
-      <value>LED</value>
-      <footprint>LEDs:LED_D5.0mm_FlatTop</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6008FE63</tstamp>
     </comp>
     <comp ref="J12">
       <value>Conn_01x04</value>
@@ -102,30 +104,6 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEC5B57</tstamp>
-    </comp>
-    <comp ref="R11">
-      <value>200R</value>
-      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FF69C98</tstamp>
-    </comp>
-    <comp ref="R12">
-      <value>200R</value>
-      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FF6A384</tstamp>
-    </comp>
-    <comp ref="R13">
-      <value>200R</value>
-      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FF6A611</tstamp>
     </comp>
     <comp ref="J14">
       <value>Conn_01x02</value>
@@ -137,8 +115,13 @@
     </comp>
     <comp ref="BZ1">
       <value>Buzzer</value>
-      <footprint>Buzzers_Beepers:BUZZER</footprint>
-      <datasheet>~</datasheet>
+      <footprint>Buzzers_Beepers:Buzzer_12x9.5RM7.6</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/piezoelectronic_buzzer_ps_en.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">PS1240P02BT</field>
+        <field name="Mouser Part Number">810-PS1240P02BT</field>
+      </fields>
       <libsource lib="Device" part="Buzzer" description="Buzzer, polarized"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6002F13D</tstamp>
@@ -146,7 +129,12 @@
     <comp ref="SW2">
       <value>SW_Push</value>
       <footprint>Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/26/ADTS6-ADTSM-KTSC6-263747-1158247.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Apem</field>
+        <field name="Manufacturer_Part_Number">ADTS61KV</field>
+        <field name="Mouser Part Number">642-ADTS61KV</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6013CD68</tstamp>
@@ -154,7 +142,12 @@
     <comp ref="SW3">
       <value>SW_Push</value>
       <footprint>Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/26/ADTS6-ADTSM-KTSC6-263747-1158247.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Apem</field>
+        <field name="Manufacturer_Part_Number">ADTS61KV</field>
+        <field name="Mouser Part Number">642-ADTS61KV</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6013D57D</tstamp>
@@ -162,7 +155,12 @@
     <comp ref="U6">
       <value>TSR_1-2450</value>
       <footprint>Converters_DCDC_ACDC:DCDC-Conv_TRACO_TSR-1</footprint>
-      <datasheet>http://www.tracopower.com/products/tsr1.pdf</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/687/tsr05-536572.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">TRACO Power </field>
+        <field name="Manufacturer_Part_Number">TSR0.5-2450</field>
+        <field name="Mouser Part Number">495-TSR0.5-2450</field>
+      </fields>
       <libsource lib="Regulator_Switching" part="TSR_1-2450" description="1A step-down regulator module, fixed 5V output voltage, 5-36V input voltage, -40°C to +85°C temperature range, TO-220 compatible LM78xx replacement"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6022A77E</tstamp>
@@ -170,7 +168,12 @@
     <comp ref="F1">
       <value>500mA</value>
       <footprint>Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/643/ds-CP-0zcj-series-1664160.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Bel Fuse </field>
+        <field name="Manufacturer_Part_Number">0ZCJ0025AF2E </field>
+        <field name="Mouser Part Number">530-0ZCJ0025AF2E</field>
+      </fields>
       <libsource lib="Device" part="Polyfuse_Small" description="Resettable fuse, polymeric positive temperature coefficient, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>600649FD</tstamp>
@@ -178,7 +181,12 @@
     <comp ref="C1">
       <value>4.7uF</value>
       <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">KEMET</field>
+        <field name="Manufacturer_Part_Number">C1206C475K5PACTU</field>
+        <field name="Mouser Part Number">80-C1206C475K5P</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60325EF2</tstamp>
@@ -186,7 +194,12 @@
     <comp ref="C2">
       <value>4.7uF</value>
       <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">KEMET</field>
+        <field name="Manufacturer_Part_Number">C1206C475K5PACTU</field>
+        <field name="Mouser Part Number">80-C1206C475K5P</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6032675D</tstamp>
@@ -194,7 +207,12 @@
     <comp ref="C3">
       <value>4.7uF</value>
       <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">KEMET</field>
+        <field name="Manufacturer_Part_Number">C1206C475K5PACTU</field>
+        <field name="Mouser Part Number">80-C1206C475K5P</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60326A6F</tstamp>
@@ -202,15 +220,25 @@
     <comp ref="L1">
       <value>10uH</value>
       <footprint>Inductors_SMD:L_TracoPower_TCK-047_5.2x5.8mm</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/687/tck047-519418.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">TRACO Power </field>
+        <field name="Manufacturer_Part_Number">TCK-047 </field>
+        <field name="Mouser Part Number">495-TCK-047 </field>
+      </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60327183</tstamp>
     </comp>
     <comp ref="C4">
       <value>100uF</value>
-      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x7.7</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/315/panasonic_05052020_Capacitor_Lytic_SMD_Halogen_Fre-1843155.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FTH101XAL</field>
+        <field name="Mouser Part Number">667-EEE-FTH101XAL</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>603DBE78</tstamp>
@@ -226,7 +254,12 @@
     <comp ref="R2">
       <value>4k7</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW12064K70FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-4.7K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FFD5052</tstamp>
@@ -234,7 +267,12 @@
     <comp ref="R1">
       <value>4k7</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW12064K70FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-4.7K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FFD451D</tstamp>
@@ -243,6 +281,11 @@
       <value>FM24C64B</value>
       <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
       <datasheet>http://www.cypress.com/file/41651/download</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Cypress Semiconductor</field>
+        <field name="Manufacturer_Part_Number">FM24C64B-G</field>
+        <field name="Mouser Part Number">877-FM24C64B-G</field>
+      </fields>
       <libsource lib="Memory_NVRAM" part="FM24C64B" description="64Kb serial FRAM nonvolatile Memory, SOIC-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FEBAE81</tstamp>
@@ -258,7 +301,12 @@
     <comp ref="R14">
       <value>120R</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206120RFKEAC</field>
+        <field name="Mouser Part Number">71-CRCW1206120RFKEAC</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6002C5F3</tstamp>
@@ -273,7 +321,6 @@
         <field name="Manufacturer_Name">BI Technologies</field>
         <field name="Manufacturer_Part_Number">EN11-HSM1AF15</field>
         <field name="Mouser Part Number">858-EN11-HSM1AF15</field>
-        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=858-EN11-HSM1AF15</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="EN11-HSM1AF15" description="BI TECHNOLOGIES / TT ELECTRONICS - EN11-HSM1AF15 - INCREMENTAL ENCODER"/>
       <sheetpath names="/" tstamps="/"/>
@@ -319,18 +366,279 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6000072C</tstamp>
     </comp>
-    <comp ref="D1">
-      <value>D</value>
-      <footprint>Diodes_SMD:D_1206</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="D" description="Diode"/>
+    <comp ref="D5">
+      <value>D_Schottky</value>
+      <footprint>Diodes_SMD:D_2114</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/40/schottky-776407.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">SD2114S040S8R0</field>
+        <field name="Mouser Part Number">581-SD2114S040S8R0</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FFF49E3</tstamp>
+      <tstamp>601250AD</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <footprint>Diodes_SMD:D_1206</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/40/schottky-776407.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">AVX</field>
+        <field name="Manufacturer_Part_Number">SD1206T040S1R0</field>
+        <field name="Mouser Part Number">581-SD1206T040S1R0</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6014A409</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>KSC1815</value>
+      <footprint>TO_SOT_Packages_THT:TO-92_Inline_Wide</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/2N3903-D.PDF</datasheet>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60044479</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF6A611</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF6A384</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF69C98</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LEDs:LED_D5.0mm_FlatTop</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6008FE63</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LEDs:LED_D5.0mm_FlatTop</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6009072B</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LEDs:LED_D5.0mm_FlatTop</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60090A09</tstamp>
+    </comp>
+    <comp ref="FID3">
+      <value>Fiducial</value>
+      <footprint>Fiducials:Fiducial_0.5mm_Dia_1mm_Outer</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60014620</tstamp>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducials:Fiducial_0.5mm_Dia_1mm_Outer</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60014CC0</tstamp>
+    </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducials:Fiducial_0.5mm_Dia_1mm_Outer</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60014ECF</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Vitramon</field>
+        <field name="Manufacturer_Part_Number">VJ1206Y104KXXAC</field>
+        <field name="Mouser Part Number">77-VJ1206Y104KXXAC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600386A9</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Vitramon</field>
+        <field name="Manufacturer_Part_Number">VJ1206Y104KXXAC</field>
+        <field name="Mouser Part Number">77-VJ1206Y104KXXAC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600391B7</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Vitramon</field>
+        <field name="Manufacturer_Part_Number">VJ1206Y104KXXAC</field>
+        <field name="Mouser Part Number">77-VJ1206Y104KXXAC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6003957E</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Vitramon</field>
+        <field name="Manufacturer_Part_Number">VJ1206Y104KXXAC</field>
+        <field name="Mouser Part Number">77-VJ1206Y104KXXAC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60055D79</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602225BF</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60222E14</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60223189</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6022356E</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>200R</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW1206200RFKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-200-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6024B34B</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>68k</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/dcrcwe3-1762152.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120668K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-68K-E3</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60038962</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100uF</value>
+      <footprint>Capacitors_SMD:CP_Elec_6.3x7.7</footprint>
+      <datasheet>https://www.mouser.ch/datasheet/2/315/panasonic_05052020_Capacitor_Lytic_SMD_Halogen_Fre-1843155.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FTH101XAL</field>
+        <field name="Mouser Part Number">667-EEE-FTH101XAL</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60144572</tstamp>
     </comp>
     <comp ref="U5">
       <value>MCP3008</value>
       <footprint>Housings_DIP:DIP-16_W7.62mm_Socket</footprint>
-      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/268/21295b-72710.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Microchip Technology </field>
+        <field name="Manufacturer_Part_Number">MCP3008-I/P </field>
+        <field name="Mouser Part Number">579-MCP3008-I/P </field>
+      </fields>
       <libsource lib="Analog_ADC" part="MCP3008" description="A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF10AFF</tstamp>
@@ -338,7 +646,12 @@
     <comp ref="R3">
       <value>27k</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120627K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-27K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF211F8</tstamp>
@@ -346,7 +659,12 @@
     <comp ref="R4">
       <value>27k</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120627K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-27K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF21565</tstamp>
@@ -354,7 +672,12 @@
     <comp ref="R5">
       <value>27k</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120627K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-27K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF21841</tstamp>
@@ -362,7 +685,12 @@
     <comp ref="R6">
       <value>27k</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120627K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-27K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF21B77</tstamp>
@@ -370,7 +698,12 @@
     <comp ref="R7">
       <value>27k</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120627K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-27K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF21E2F</tstamp>
@@ -378,7 +711,12 @@
     <comp ref="R8">
       <value>27k</value>
       <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">Vishay / Dale</field>
+        <field name="Manufacturer_Part_Number">CRCW120627K0FKEA</field>
+        <field name="Mouser Part Number">71-CRCW1206-27K-E3</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
       <tstamp>5FF2209D</tstamp>
@@ -409,7 +747,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -425,7 +762,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -441,7 +777,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -457,7 +792,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -473,7 +807,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -489,7 +822,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -505,7 +837,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -521,7 +852,6 @@
         <field name="Manufacturer_Name">CUI Devices</field>
         <field name="Manufacturer_Part_Number">TBL009-254-02GY-2GY</field>
         <field name="Mouser Part Number">490-TBL00925402GY2GY</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D</field>
       </fields>
       <libsource lib="SamacSys_Parts" part="TBL009-254-02GY-2GY" description="Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button"/>
       <sheetpath names="/ADC_SPI/" tstamps="/5FF0E871/"/>
@@ -670,8 +1000,23 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="D">
-      <description>Diode</description>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
       <docs>~</docs>
       <footprints>
         <fp>TO-???*</fp>
@@ -681,7 +1026,7 @@
       </footprints>
       <fields>
         <field name="Reference">D</field>
-        <field name="Value">D</field>
+        <field name="Value">D_Schottky</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -811,6 +1156,17 @@
         <pin num="7" name="CANH" type="BiDi"/>
         <pin num="8" name="STBY" type="input"/>
       </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+      </fields>
     </libpart>
     <libpart lib="Mechanical" part="MountingHole_Pad">
       <description>Mounting Hole with connection</description>
@@ -1000,6 +1356,23 @@
         <pin num="54" name="D+" type="BiDi"/>
       </pins>
     </libpart>
+    <libpart lib="Transistor_BJT" part="2N3904">
+      <description>0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.onsemi.com/pub/Collateral/2N3903-D.PDF</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N3904</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Analog_ADC">
@@ -1035,411 +1408,455 @@
     <library logical="Teensy_Component">
       <uri>W:/KicadStuff/PartsLibaries/teensy_library-master/teensy.lib</uri>
     </library>
+    <library logical="Transistor_BJT">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C1-Pad1)">
-      <node ref="F1" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="L1" pin="1"/>
-    </net>
-    <net code="2" name="+24V">
-      <node ref="D1" pin="2"/>
-      <node ref="J11" pin="1"/>
-      <node ref="J1" pin="9"/>
-      <node ref="J2" pin="9"/>
-    </net>
-    <net code="3" name="Net-(C3-Pad1)">
-      <node ref="L1" pin="2"/>
-      <node ref="U6" pin="1"/>
-      <node ref="C3" pin="1"/>
-    </net>
-    <net code="4" name="SERIAL2_TX">
-      <node ref="U1" pin="10"/>
-      <node ref="J14" pin="1"/>
-    </net>
-    <net code="5" name="ROTENC_SW">
-      <node ref="U7" pin="E1"/>
-      <node ref="U1" pin="28"/>
-    </net>
-    <net code="6" name="SERIAL2_RX">
-      <node ref="J14" pin="2"/>
-      <node ref="U1" pin="9"/>
-    </net>
-    <net code="7" name="Net-(D3-Pad1)">
-      <node ref="R12" pin="1"/>
-      <node ref="D3" pin="1"/>
-    </net>
-    <net code="8" name="LED3">
-      <node ref="D4" pin="2"/>
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="9" name="Net-(D2-Pad1)">
-      <node ref="R11" pin="1"/>
-      <node ref="D2" pin="1"/>
-    </net>
-    <net code="10" name="Net-(D4-Pad1)">
-      <node ref="R13" pin="1"/>
-      <node ref="D4" pin="1"/>
-    </net>
-    <net code="11" name="Net-(U1-Pad27)">
-      <node ref="U1" pin="27"/>
-    </net>
-    <net code="12" name="BUTTON1">
-      <node ref="SW2" pin="2"/>
-      <node ref="U1" pin="21"/>
-    </net>
-    <net code="13" name="BUTTON2">
-      <node ref="SW3" pin="2"/>
-      <node ref="U1" pin="22"/>
-    </net>
-    <net code="14" name="BUZZER">
-      <node ref="BZ1" pin="1"/>
-      <node ref="U1" pin="11"/>
-    </net>
-    <net code="15" name="ROTENC_A">
-      <node ref="U1" pin="24"/>
-      <node ref="U7" pin="A1"/>
-    </net>
-    <net code="16" name="ROTENC_B">
-      <node ref="U7" pin="B1"/>
-      <node ref="U1" pin="23"/>
-    </net>
-    <net code="17" name="Net-(U7-PadMH1)">
-      <node ref="U7" pin="MH1"/>
-    </net>
-    <net code="18" name="+5V">
-      <node ref="U3" pin="3"/>
-      <node ref="U6" pin="3"/>
-      <node ref="J11" pin="2"/>
-      <node ref="U2" pin="3"/>
-      <node ref="C4" pin="1"/>
-      <node ref="U1" pin="33"/>
-      <node ref="J13" pin="2"/>
-      <node ref="U4" pin="8"/>
-    </net>
-    <net code="19" name="+3V3">
-      <node ref="R2" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="J12" pin="2"/>
-      <node ref="U2" pin="5"/>
-      <node ref="R3" pin="1"/>
-      <node ref="U1" pin="31"/>
-      <node ref="U3" pin="5"/>
-      <node ref="R10" pin="1"/>
-      <node ref="U5" pin="16"/>
-      <node ref="U5" pin="15"/>
-      <node ref="R9" pin="1"/>
-      <node ref="R8" pin="1"/>
-      <node ref="R7" pin="1"/>
-      <node ref="R6" pin="1"/>
-      <node ref="R5" pin="1"/>
-      <node ref="SW3" pin="1"/>
-      <node ref="SW2" pin="1"/>
-      <node ref="J11" pin="3"/>
-      <node ref="U7" pin="C1"/>
-      <node ref="U7" pin="D1"/>
-    </net>
-    <net code="20" name="Net-(U7-PadMH2)">
-      <node ref="U7" pin="MH2"/>
-    </net>
-    <net code="21" name="Net-(D1-Pad1)">
-      <node ref="F1" pin="2"/>
-      <node ref="D1" pin="1"/>
-    </net>
-    <net code="22" name="Net-(U1-Pad7)">
-      <node ref="U1" pin="7"/>
-    </net>
-    <net code="23" name="FRAM_SDA">
-      <node ref="J13" pin="4"/>
-      <node ref="R1" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="U1" pin="25"/>
-    </net>
-    <net code="24" name="FRAM_SCL">
-      <node ref="U4" pin="6"/>
-      <node ref="U1" pin="26"/>
-      <node ref="R2" pin="2"/>
-      <node ref="J13" pin="3"/>
-    </net>
-    <net code="25" name="Net-(U4-Pad7)">
-      <node ref="U4" pin="7"/>
-    </net>
-    <net code="26" name="Net-(U4-Pad3)">
-      <node ref="U4" pin="3"/>
-    </net>
-    <net code="27" name="Net-(JP1-Pad2)">
-      <node ref="JP1" pin="2"/>
-      <node ref="R14" pin="1"/>
-    </net>
-    <net code="28" name="Net-(U4-Pad2)">
+    <net code="1" name="Net-(U4-Pad2)">
       <node ref="U4" pin="2"/>
     </net>
-    <net code="29" name="Net-(U4-Pad1)">
+    <net code="2" name="FRAM_SCL">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="26"/>
+      <node ref="U4" pin="6"/>
+      <node ref="J13" pin="3"/>
+    </net>
+    <net code="3" name="FRAM_SDA">
+      <node ref="U4" pin="5"/>
+      <node ref="J13" pin="4"/>
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="4" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="5" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="6" name="+3V3">
+      <node ref="U3" pin="5"/>
+      <node ref="U1" pin="31"/>
+      <node ref="J12" pin="2"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="J11" pin="3"/>
+      <node ref="U5" pin="16"/>
+      <node ref="R10" pin="1"/>
+      <node ref="U5" pin="15"/>
+      <node ref="BZ1" pin="1"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="U7" pin="C1"/>
+      <node ref="U7" pin="D1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="7" name="Net-(U4-Pad1)">
       <node ref="U4" pin="1"/>
     </net>
-    <net code="30" name="Net-(U1-Pad53)">
-      <node ref="U1" pin="53"/>
-    </net>
-    <net code="31" name="Net-(U1-Pad19)">
-      <node ref="U1" pin="19"/>
-    </net>
-    <net code="32" name="Net-(U1-Pad18)">
-      <node ref="U1" pin="18"/>
-    </net>
-    <net code="33" name="Net-(U1-Pad17)">
-      <node ref="U1" pin="17"/>
-    </net>
-    <net code="34" name="Net-(U1-Pad16)">
-      <node ref="U1" pin="16"/>
-    </net>
-    <net code="35" name="Net-(U1-Pad15)">
-      <node ref="U1" pin="15"/>
-    </net>
-    <net code="36" name="Net-(U1-Pad54)">
-      <node ref="U1" pin="54"/>
-    </net>
-    <net code="37" name="Net-(U1-Pad34)">
-      <node ref="U1" pin="34"/>
-    </net>
-    <net code="38" name="Net-(U1-Pad52)">
-      <node ref="U1" pin="52"/>
-    </net>
-    <net code="39" name="Net-(U1-Pad51)">
-      <node ref="U1" pin="51"/>
-    </net>
-    <net code="40" name="Net-(U1-Pad50)">
-      <node ref="U1" pin="50"/>
-    </net>
-    <net code="41" name="Net-(U1-Pad49)">
-      <node ref="U1" pin="49"/>
-    </net>
-    <net code="42" name="Net-(U1-Pad48)">
-      <node ref="U1" pin="48"/>
-    </net>
-    <net code="43" name="Net-(U1-Pad47)">
-      <node ref="U1" pin="47"/>
-    </net>
-    <net code="44" name="Net-(U1-Pad46)">
-      <node ref="U1" pin="46"/>
-    </net>
-    <net code="45" name="Net-(J1-Pad5)">
-      <node ref="J1" pin="5"/>
-    </net>
-    <net code="46" name="GND">
-      <node ref="BZ1" pin="2"/>
-      <node ref="J8" pin="3"/>
-      <node ref="J12" pin="1"/>
+    <net code="8" name="GND">
       <node ref="R13" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U4" pin="4"/>
+      <node ref="J10" pin="4"/>
       <node ref="R12" pin="2"/>
       <node ref="R11" pin="2"/>
-      <node ref="U2" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="J10" pin="4"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="J11" pin="4"/>
       <node ref="J10" pin="3"/>
-      <node ref="J9" pin="4"/>
-      <node ref="J9" pin="3"/>
+      <node ref="J8" pin="3"/>
       <node ref="J8" pin="4"/>
+      <node ref="J9" pin="3"/>
+      <node ref="J9" pin="4"/>
+      <node ref="J12" pin="1"/>
+      <node ref="J1" pin="6"/>
+      <node ref="U3" pin="2"/>
+      <node ref="J1" pin="0"/>
+      <node ref="U3" pin="8"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="6"/>
+      <node ref="U1" pin="32"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J2" pin="0"/>
+      <node ref="J12" pin="4"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C2" pin="2"/>
       <node ref="U5" pin="9"/>
-      <node ref="U5" pin="14"/>
-      <node ref="C4" pin="2"/>
       <node ref="C1" pin="2"/>
+      <node ref="U5" pin="14"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J13" pin="1"/>
       <node ref="C3" pin="2"/>
+      <node ref="J4" pin="4"/>
+      <node ref="C5" pin="2"/>
       <node ref="U6" pin="2"/>
-      <node ref="J5" pin="3"/>
       <node ref="J7" pin="3"/>
       <node ref="J6" pin="4"/>
       <node ref="J6" pin="3"/>
       <node ref="J5" pin="4"/>
-      <node ref="J4" pin="4"/>
+      <node ref="H3" pin="1"/>
+      <node ref="J5" pin="3"/>
       <node ref="J7" pin="4"/>
       <node ref="J3" pin="4"/>
       <node ref="J3" pin="3"/>
       <node ref="J4" pin="3"/>
-      <node ref="J1" pin="3"/>
-      <node ref="J1" pin="6"/>
-      <node ref="U1" pin="1"/>
-      <node ref="J2" pin="0"/>
       <node ref="H4" pin="1"/>
-      <node ref="H3" pin="1"/>
-      <node ref="H1" pin="1"/>
-      <node ref="U1" pin="32"/>
-      <node ref="J2" pin="6"/>
-      <node ref="J2" pin="3"/>
-      <node ref="J11" pin="4"/>
-      <node ref="U3" pin="2"/>
-      <node ref="U3" pin="8"/>
-      <node ref="J1" pin="0"/>
       <node ref="H2" pin="1"/>
-      <node ref="U2" pin="8"/>
-      <node ref="U4" pin="4"/>
-      <node ref="J12" pin="4"/>
-      <node ref="J13" pin="1"/>
+      <node ref="H1" pin="1"/>
     </net>
-    <net code="47" name="Net-(J1-Pad8)">
-      <node ref="J1" pin="8"/>
+    <net code="9" name="+5V">
+      <node ref="U1" pin="33"/>
+      <node ref="U4" pin="8"/>
+      <node ref="U3" pin="3"/>
+      <node ref="J13" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="J11" pin="2"/>
+      <node ref="U6" pin="3"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C4" pin="1"/>
     </net>
-    <net code="48" name="Net-(U1-Pad45)">
-      <node ref="U1" pin="45"/>
+    <net code="10" name="Net-(U7-PadMH1)">
+      <node ref="U7" pin="MH1"/>
     </net>
-    <net code="49" name="Net-(J1-Pad1)">
-      <node ref="J1" pin="1"/>
+    <net code="11" name="Net-(U7-PadMH2)">
+      <node ref="U7" pin="MH2"/>
     </net>
-    <net code="50" name="Net-(J1-Pad4)">
-      <node ref="J1" pin="4"/>
+    <net code="12" name="Net-(JP1-Pad2)">
+      <node ref="R14" pin="1"/>
+      <node ref="JP1" pin="2"/>
     </net>
-    <net code="51" name="Net-(J2-Pad1)">
-      <node ref="J2" pin="1"/>
+    <net code="13" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="F1" pin="1"/>
     </net>
-    <net code="52" name="/Mod_CAN_N">
-      <node ref="U3" pin="6"/>
-      <node ref="R14" pin="2"/>
-      <node ref="J2" pin="2"/>
+    <net code="14" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="F1" pin="2"/>
     </net>
-    <net code="53" name="Net-(J2-Pad4)">
-      <node ref="J2" pin="4"/>
+    <net code="15" name="Net-(C3-Pad1)">
+      <node ref="U6" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="L1" pin="2"/>
     </net>
-    <net code="54" name="Net-(J2-Pad5)">
-      <node ref="J2" pin="5"/>
+    <net code="16" name="Net-(R17-Pad1)">
+      <node ref="R19" pin="2"/>
+      <node ref="R17" pin="1"/>
     </net>
-    <net code="55" name="Net-(J2-Pad8)">
-      <node ref="J2" pin="8"/>
+    <net code="17" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="R11" pin="1"/>
     </net>
-    <net code="56" name="Net-(U1-Pad36)">
-      <node ref="U1" pin="36"/>
-    </net>
-    <net code="57" name="Net-(U1-Pad44)">
-      <node ref="U1" pin="44"/>
-    </net>
-    <net code="58" name="Net-(U1-Pad43)">
-      <node ref="U1" pin="43"/>
-    </net>
-    <net code="59" name="Net-(U1-Pad42)">
-      <node ref="U1" pin="42"/>
-    </net>
-    <net code="60" name="Net-(U1-Pad41)">
-      <node ref="U1" pin="41"/>
-    </net>
-    <net code="61" name="Net-(U1-Pad40)">
-      <node ref="U1" pin="40"/>
-    </net>
-    <net code="62" name="Net-(U1-Pad39)">
-      <node ref="U1" pin="39"/>
-    </net>
-    <net code="63" name="Net-(U1-Pad38)">
-      <node ref="U1" pin="38"/>
-    </net>
-    <net code="64" name="Net-(U1-Pad37)">
-      <node ref="U1" pin="37"/>
-    </net>
-    <net code="65" name="Net-(U1-Pad35)">
-      <node ref="U1" pin="35"/>
-    </net>
-    <net code="66" name="Mod_CAN1_TX">
-      <node ref="U1" pin="29"/>
-      <node ref="U3" pin="1"/>
-    </net>
-    <net code="67" name="LED1">
+    <net code="18" name="LED1">
       <node ref="U1" pin="4"/>
       <node ref="D2" pin="2"/>
     </net>
-    <net code="68" name="/Mod_CAN_P">
+    <net code="19" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="20" name="LED3">
+      <node ref="D4" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="21" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="22" name="Net-(Q1-Pad2)">
+      <node ref="R20" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="23" name="Net-(BZ1-Pad2)">
+      <node ref="BZ1" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="24" name="Net-(R15-Pad1)">
+      <node ref="R17" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="25" name="Net-(R15-Pad2)">
+      <node ref="R16" pin="1"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="26" name="LED2">
+      <node ref="D3" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="27" name="BUTTON1">
+      <node ref="SW2" pin="2"/>
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="28" name="BUTTON2">
+      <node ref="SW3" pin="2"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="29" name="ROTENC_B">
+      <node ref="U7" pin="B1"/>
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="30" name="ROTENC_A">
+      <node ref="U1" pin="24"/>
+      <node ref="U7" pin="A1"/>
+    </net>
+    <net code="31" name="ROTENC_SW">
+      <node ref="U7" pin="E1"/>
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="33" name="+24V">
+      <node ref="D1" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="J11" pin="1"/>
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="34" name="Net-(D4-Pad1)">
+      <node ref="R13" pin="1"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="35" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1"/>
+      <node ref="J2" pin="9"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="36" name="Net-(U1-Pad42)">
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="37" name="Net-(U1-Pad51)">
+      <node ref="U1" pin="51"/>
+    </net>
+    <net code="38" name="Net-(U1-Pad50)">
+      <node ref="U1" pin="50"/>
+    </net>
+    <net code="39" name="Net-(U1-Pad49)">
+      <node ref="U1" pin="49"/>
+    </net>
+    <net code="40" name="Net-(U1-Pad48)">
+      <node ref="U1" pin="48"/>
+    </net>
+    <net code="41" name="Net-(U1-Pad47)">
+      <node ref="U1" pin="47"/>
+    </net>
+    <net code="42" name="Net-(U1-Pad46)">
+      <node ref="U1" pin="46"/>
+    </net>
+    <net code="43" name="Net-(U1-Pad45)">
+      <node ref="U1" pin="45"/>
+    </net>
+    <net code="44" name="Net-(U1-Pad44)">
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="45" name="Net-(U1-Pad43)">
+      <node ref="U1" pin="43"/>
+    </net>
+    <net code="46" name="Net-(U1-Pad52)">
+      <node ref="U1" pin="52"/>
+    </net>
+    <net code="47" name="Net-(U1-Pad41)">
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="48" name="Net-(U1-Pad40)">
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="49" name="Net-(U1-Pad39)">
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="50" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="51" name="Net-(U1-Pad37)">
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="52" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="53" name="Net-(U1-Pad35)">
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="54" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="55" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="56" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="57" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="58" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="59" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="60" name="Net-(U1-Pad17)">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="61" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="62" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="63" name="Net-(U1-Pad54)">
+      <node ref="U1" pin="54"/>
+    </net>
+    <net code="64" name="Net-(U1-Pad53)">
+      <node ref="U1" pin="53"/>
+    </net>
+    <net code="65" name="Net-(U1-Pad34)">
+      <node ref="U1" pin="34"/>
+    </net>
+    <net code="66" name="Net-(J2-Pad8)">
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="67" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="68" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="69" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="70" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="71" name="Mod_CAN1_TX">
+      <node ref="U1" pin="29"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="72" name="/Mod_CAN_N">
+      <node ref="J2" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="73" name="/Mod_CAN_P">
       <node ref="J2" pin="7"/>
       <node ref="U3" pin="7"/>
       <node ref="JP1" pin="1"/>
     </net>
-    <net code="69" name="RGBLED_DATAOUT">
+    <net code="74" name="SERIAL2_RX">
+      <node ref="J14" pin="2"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="75" name="SERIAL2_TX">
+      <node ref="J14" pin="1"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="76" name="RGBLED_DATAOUT">
       <node ref="U1" pin="8"/>
       <node ref="J12" pin="3"/>
     </net>
-    <net code="70" name="/SN_CAN_P">
-      <node ref="J1" pin="7"/>
-      <node ref="U2" pin="7"/>
+    <net code="77" name="BUZZER">
+      <node ref="U1" pin="11"/>
+      <node ref="R20" pin="2"/>
     </net>
-    <net code="71" name="/SN_CAN_N">
-      <node ref="J1" pin="2"/>
-      <node ref="U2" pin="6"/>
-    </net>
-    <net code="72" name="LED2">
-      <node ref="D3" pin="2"/>
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="73" name="Mod_CAN1_RX">
-      <node ref="U1" pin="30"/>
-      <node ref="U3" pin="4"/>
-    </net>
-    <net code="74" name="SN_CAN2_RX">
-      <node ref="U1" pin="2"/>
-      <node ref="U2" pin="4"/>
-    </net>
-    <net code="75" name="SN_CAN2_TX">
-      <node ref="U2" pin="1"/>
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="76" name="ADC_CS_SPI">
-      <node ref="U1" pin="12"/>
-      <node ref="U5" pin="10"/>
-    </net>
-    <net code="77" name="ADC_MOSI_SPI">
-      <node ref="U5" pin="11"/>
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="78" name="ADC_MISO_SPI">
-      <node ref="U5" pin="12"/>
-      <node ref="U1" pin="14"/>
-    </net>
-    <net code="79" name="ADC_SCK_SPI">
+    <net code="78" name="ADC_SCK_SPI">
       <node ref="U1" pin="20"/>
       <node ref="U5" pin="13"/>
     </net>
-    <net code="80" name="Net-(J10-Pad1)">
-      <node ref="U5" pin="8"/>
-      <node ref="R10" pin="2"/>
-      <node ref="J10" pin="2"/>
-      <node ref="J10" pin="1"/>
+    <net code="79" name="ADC_MISO_SPI">
+      <node ref="U5" pin="12"/>
+      <node ref="U1" pin="14"/>
     </net>
-    <net code="81" name="Net-(J9-Pad1)">
+    <net code="80" name="ADC_CS_SPI">
+      <node ref="U1" pin="12"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="81" name="ADC_MOSI_SPI">
+      <node ref="U5" pin="11"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="82" name="SN_CAN2_RX">
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="83" name="Mod_CAN1_RX">
+      <node ref="U3" pin="4"/>
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="84" name="SN_CAN2_TX">
+      <node ref="U1" pin="3"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="85" name="/SN_CAN_N">
+      <node ref="U2" pin="6"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="86" name="/SN_CAN_P">
+      <node ref="U2" pin="7"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="87" name="Net-(J10-Pad1)">
+      <node ref="R10" pin="2"/>
+      <node ref="U5" pin="8"/>
+      <node ref="J10" pin="1"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="88" name="Net-(J9-Pad1)">
       <node ref="U5" pin="7"/>
       <node ref="R9" pin="2"/>
-      <node ref="J9" pin="1"/>
       <node ref="J9" pin="2"/>
+      <node ref="J9" pin="1"/>
     </net>
-    <net code="82" name="Net-(J8-Pad1)">
-      <node ref="J8" pin="1"/>
-      <node ref="J8" pin="2"/>
-      <node ref="R8" pin="2"/>
+    <net code="89" name="Net-(J8-Pad1)">
       <node ref="U5" pin="6"/>
+      <node ref="R8" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J8" pin="1"/>
     </net>
-    <net code="83" name="Net-(J7-Pad1)">
-      <node ref="J7" pin="1"/>
-      <node ref="J7" pin="2"/>
+    <net code="90" name="Net-(J7-Pad1)">
       <node ref="R7" pin="2"/>
       <node ref="U5" pin="5"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J7" pin="2"/>
     </net>
-    <net code="84" name="Net-(J3-Pad1)">
+    <net code="91" name="Net-(J3-Pad1)">
       <node ref="R3" pin="2"/>
+      <node ref="J3" pin="2"/>
       <node ref="J3" pin="1"/>
       <node ref="U5" pin="1"/>
-      <node ref="J3" pin="2"/>
     </net>
-    <net code="85" name="Net-(J4-Pad1)">
-      <node ref="U5" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="J4" pin="1"/>
+    <net code="92" name="Net-(J4-Pad1)">
       <node ref="J4" pin="2"/>
+      <node ref="J4" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U5" pin="2"/>
     </net>
-    <net code="86" name="Net-(J6-Pad1)">
+    <net code="93" name="Net-(J6-Pad1)">
       <node ref="R6" pin="2"/>
-      <node ref="J6" pin="2"/>
       <node ref="U5" pin="4"/>
+      <node ref="J6" pin="2"/>
       <node ref="J6" pin="1"/>
     </net>
-    <net code="87" name="Net-(J5-Pad1)">
-      <node ref="R5" pin="2"/>
+    <net code="94" name="Net-(J5-Pad1)">
       <node ref="U5" pin="3"/>
-      <node ref="J5" pin="1"/>
       <node ref="J5" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="R5" pin="2"/>
     </net>
   </nets>
 </export>

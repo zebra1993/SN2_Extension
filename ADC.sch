@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
+Title "Snapmaker2 CANbus extension"
+Date "2021-01-16"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""

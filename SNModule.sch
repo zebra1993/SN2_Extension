@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
+Title "Snapmaker2 CANbus extension"
+Date "2021-01-16"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -48,21 +48,6 @@ F 1 "GND" H 6305 1577 50  0000 C CNN
 F 2 "" H 6300 1750 50  0001 C CNN
 F 3 "" H 6300 1750 50  0001 C CNN
 	1    6300 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_CAN_LIN:MCP2562-E-P U3
-U 1 1 5FEB93F9
-P 8650 1250
-F 0 "U3" H 8650 1739 50  0000 C CNN
-F 1 "MCP2562-E-P" H 8650 1740 50  0001 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 8650 750 50  0001 C CIN
-F 3 "https://www.mouser.ch/datasheet/2/268/20005167C-1512552.pdf" H 8650 1250 50  0001 C CNN
-F 4 "Microchip Technology " H 8650 1250 50  0001 C CNN "Manufacturer_Name"
-F 5 "MCP2562-E/P" H 8650 1250 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "579-MCP2562-E/P" H 8650 1250 50  0001 C CNN "Mouser Part Number"
-F 7 "" H 8650 1250 50  0001 C CNN "Mouser Price/Stock"
-	1    8650 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -168,17 +153,6 @@ F 3 "" H 3700 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0108
-U 1 1 5FED7903
-P 8650 800
-F 0 "#PWR0108" H 8650 650 50  0001 C CNN
-F 1 "+5V" H 8665 973 50  0000 C CNN
-F 2 "" H 8650 800 50  0001 C CNN
-F 3 "" H 8650 800 50  0001 C CNN
-	1    8650 800 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0109
 U 1 1 5FED7DB9
 P 3000 1800
@@ -189,94 +163,21 @@ F 3 "" H 3000 1800 50  0001 C CNN
 	1    3000 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5FED8279
-P 8650 1800
-F 0 "#PWR0110" H 8650 1550 50  0001 C CNN
-F 1 "GND" H 8655 1627 50  0000 C CNN
-F 2 "" H 8650 1800 50  0001 C CNN
-F 3 "" H 8650 1800 50  0001 C CNN
-	1    8650 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 1850 3000 1850
 Wire Wire Line
 	3000 1850 3000 1800
-Wire Wire Line
-	8650 800  8650 850 
-$Comp
-L Connector:DB9_Female_MountingHoles J2
-U 1 1 5FEDC114
-P 10800 1250
-F 0 "J2" H 10980 1206 50  0000 L CNN
-F 1 "DB9_Female_MountingHoles" H 10980 1161 50  0001 L CNN
-F 2 "SamacSys_Parts:D09S23A4GV00LF" H 10800 1250 50  0001 C CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c01-8646-0755.pdf" H 10800 1250 50  0001 C CNN
-F 4 "Amphenol FCI " H 10800 1250 50  0001 C CNN "Manufacturer_Name"
-F 5 "D09S23A4GV00LF " H 10800 1250 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 " 649-D09S23A4GV00LF" H 10800 1250 50  0001 C CNN "Mouser Part Number"
-	1    10800 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 1350 9900 1050
-Wire Wire Line
-	9900 1050 10500 1050
 $Comp
 L power:GND #PWR0111
 U 1 1 5FEDE451
-P 10100 1750
-F 0 "#PWR0111" H 10100 1500 50  0001 C CNN
-F 1 "GND" H 10105 1577 50  0000 C CNN
-F 2 "" H 10100 1750 50  0001 C CNN
-F 3 "" H 10100 1750 50  0001 C CNN
-	1    10100 1750
+P 10250 2250
+F 0 "#PWR0111" H 10250 2000 50  0001 C CNN
+F 1 "GND" H 10255 2077 50  0000 C CNN
+F 2 "" H 10250 2250 50  0001 C CNN
+F 3 "" H 10250 2250 50  0001 C CNN
+	1    10250 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10500 1250 10250 1250
-Wire Wire Line
-	10500 950  10250 950 
-Wire Wire Line
-	10250 950  10250 1250
-$Comp
-L power:+24V #PWR0112
-U 1 1 5FEE00D3
-P 9600 1600
-F 0 "#PWR0112" H 9600 1450 50  0001 C CNN
-F 1 "+24V" H 9615 1773 50  0000 C CNN
-F 2 "" H 9600 1600 50  0001 C CNN
-F 3 "" H 9600 1600 50  0001 C CNN
-	1    9600 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 1450 7800 1450
-Wire Wire Line
-	7800 1450 7800 1750
-Wire Wire Line
-	7800 1750 8650 1750
-$Comp
-L power:+3V3 #PWR0113
-U 1 1 5FEE5DB0
-P 7450 1600
-F 0 "#PWR0113" H 7450 1450 50  0001 C CNN
-F 1 "+3V3" H 7465 1773 50  0000 C CNN
-F 2 "" H 7450 1600 50  0001 C CNN
-F 3 "" H 7450 1600 50  0001 C CNN
-	1    7450 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 1350 7650 1350
-Wire Wire Line
-	7650 1350 7650 1700
-Wire Wire Line
-	7650 1700 7450 1700
-Wire Wire Line
-	7450 1700 7450 1600
 Wire Wire Line
 	6000 5200 6750 5200
 Text GLabel 6750 5200 2    50   Output ~ 0
@@ -285,14 +186,6 @@ Text GLabel 6750 5100 2    50   Input ~ 0
 Mod_CAN1_RX
 Wire Wire Line
 	6000 5100 6750 5100
-Text GLabel 7850 1150 0    50   Output ~ 0
-Mod_CAN1_RX
-Text GLabel 7850 1050 0    50   Input ~ 0
-Mod_CAN1_TX
-Wire Wire Line
-	7850 1050 8150 1050
-Wire Wire Line
-	7850 1150 8150 1150
 Text GLabel 3600 1200 2    50   Output ~ 0
 SN_CAN2_RX
 Text GLabel 3600 1300 2    50   Input ~ 0
@@ -350,14 +243,6 @@ Wire Wire Line
 	1700 3450 1400 3450
 Wire Wire Line
 	1400 3550 1700 3550
-NoConn ~ 10500 850 
-NoConn ~ 10500 1350
-NoConn ~ 10500 1450
-NoConn ~ 10500 1650
-Wire Wire Line
-	9150 1150 9700 1150
-Wire Wire Line
-	9150 1350 9900 1350
 Text GLabel 3300 5000 0    50   Output ~ 0
 FRAM_SCL
 Text GLabel 3300 4900 0    50   Output ~ 0
@@ -420,31 +305,19 @@ Wire Notes Line
 	4150 2050 650  2050
 Wire Notes Line
 	650  2050 650  550 
-Wire Wire Line
-	10800 1850 10250 1850
-Wire Wire Line
-	10250 1850 10250 1650
-Connection ~ 10250 1250
-Wire Wire Line
-	10100 1750 10100 1650
-Wire Wire Line
-	10100 1650 10250 1650
-Connection ~ 10250 1650
-Wire Wire Line
-	10250 1650 10250 1250
 Wire Notes Line
-	11100 2450 11100 550 
+	11100 2650 11100 550 
 Wire Notes Line
 	11100 550  7250 550 
 Wire Notes Line
-	7250 550  7250 2450
+	7250 550  7250 2650
 Wire Notes Line
-	7250 2450 11100 2450
+	7250 2650 11100 2650
 Text Notes 4300 2000 0    50   ~ 0
 24V to 5V DC-DC Converter
 Text Notes 700  2000 0    50   ~ 0
 Snapmaker Connection
-Text Notes 7300 2000 0    50   ~ 0
+Text Notes 7350 700  0    50   ~ 0
 Connection to other Modules
 $Comp
 L power:GND #PWR0122
@@ -535,7 +408,10 @@ P 850 5700
 F 0 "J12" H 768 6017 50  0000 C CNN
 F 1 "Conn_01x04" H 768 5926 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 850 5700 50  0001 C CNN
-F 3 "~" H 850 5700 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/527/slw-1370256.pdf" H 850 5700 50  0001 C CNN
+F 4 "Samtec" H 850 5700 50  0001 C CNN "Manufacturer_Name"
+F 5 "SLW-104-01-T-S" H 850 5700 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "200-SLW10401TS" H 850 5700 50  0001 C CNN "Mouser Part Number"
 	1    850  5700
 	-1   0    0    -1  
 $EndComp
@@ -601,7 +477,10 @@ P 850 2550
 F 0 "J14" H 768 2225 50  0000 C CNN
 F 1 "Conn_01x02" H 768 2316 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 850 2550 50  0001 C CNN
-F 3 "~" H 850 2550 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/527/slw-1370256.pdf" H 850 2550 50  0001 C CNN
+F 4 "Samtec" H 850 2550 50  0001 C CNN "Manufacturer_Name"
+F 5 "SLW-102-01-T-S" H 850 2550 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "200-SLW10201TS" H 850 2550 50  0001 C CNN "Mouser Part Number"
 	1    850  2550
 	-1   0    0    1   
 $EndComp
@@ -1094,7 +973,10 @@ P 9650 5300
 F 0 "J13" H 9568 5617 50  0000 C CNN
 F 1 "Conn_01x04" H 9568 5526 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 9650 5300 50  0001 C CNN
-F 3 "~" H 9650 5300 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/527/slw-1370256.pdf" H 9650 5300 50  0001 C CNN
+F 4 "Samtec" H 9650 5300 50  0001 C CNN "Manufacturer_Name"
+F 5 "SLW-104-01-T-S" H 9650 5300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "200-SLW10401TS" H 9650 5300 50  0001 C CNN "Mouser Part Number"
 	1    9650 5300
 	-1   0    0    -1  
 $EndComp
@@ -1235,41 +1117,6 @@ F 3 "" H 8850 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 6002BAEA
-P 9800 750
-F 0 "JP1" H 9800 962 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 9800 871 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9800 750 50  0001 C CNN
-F 3 "~" H 9800 750 50  0001 C CNN
-	1    9800 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R14
-U 1 1 6002C5F3
-P 9900 900
-F 0 "R14" H 9959 946 50  0000 L CNN
-F 1 "120R" H 9959 855 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" H 9900 900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 9900 900 50  0001 C CNN
-F 4 "Vishay / Dale" H 9900 900 50  0001 C CNN "Manufacturer_Name"
-F 5 "CRCW1206120RFKEAC" H 9900 900 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "71-CRCW1206120RFKEAC" H 9900 900 50  0001 C CNN "Mouser Part Number"
-	1    9900 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 1050 9900 1000
-Connection ~ 9900 1050
-Wire Wire Line
-	9900 800  9900 750 
-Wire Wire Line
-	9700 750  9700 1150
-Connection ~ 9700 1150
-Wire Wire Line
-	9700 1150 10500 1150
-$Comp
 L SamacSys_Parts:EN11-HSM1AF15 U7
 U 1 1 5FFD471D
 P 3700 6600
@@ -1309,23 +1156,6 @@ Wire Wire Line
 NoConn ~ 3700 7600
 NoConn ~ 3700 6600
 Connection ~ 3700 6300
-Connection ~ 8150 1050
-Wire Wire Line
-	8150 1050 8450 1050
-Connection ~ 8150 1150
-Wire Wire Line
-	8150 1150 8450 1150
-Wire Wire Line
-	8650 1650 8650 1750
-Connection ~ 8650 1750
-Wire Wire Line
-	8650 1750 8650 1800
-Text Label 9200 1150 0    50   ~ 0
-Mod_CAN_P
-Text Label 9200 1350 0    50   ~ 0
-Mod_CAN_N
-Wire Wire Line
-	10500 1550 9900 1550
 $Comp
 L Connector_Generic:Conn_01x04 J11
 U 1 1 5FFEA117
@@ -1333,7 +1163,10 @@ P 8400 5200
 F 0 "J11" H 8318 5517 50  0000 C CNN
 F 1 "Conn_01x04" H 8318 5426 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 8400 5200 50  0001 C CNN
-F 3 "~" H 8400 5200 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/527/slw-1370256.pdf" H 8400 5200 50  0001 C CNN
+F 4 "Samtec" H 8400 5200 50  0001 C CNN "Manufacturer_Name"
+F 5 "SLW-104-01-T-S" H 8400 5200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "200-SLW10401TS" H 8400 5200 50  0001 C CNN "Mouser Part Number"
 	1    8400 5200
 	-1   0    0    -1  
 $EndComp
@@ -1451,27 +1284,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 800  4950 1050
 $Comp
-L Device:D_Schottky D5
-U 1 1 601250AD
-P 9750 1900
-F 0 "D5" H 9750 1683 50  0000 C CNN
-F 1 "D_Schottky" H 9750 1774 50  0000 C CNN
-F 2 "Diodes_SMD:D_2114" H 9750 1900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/40/schottky-776407.pdf" H 9750 1900 50  0001 C CNN
-F 4 "" H 9750 1900 50  0001 C CNN "MouserID"
-F 5 "" H 9750 1900 50  0001 C CNN "LCSCID"
-F 6 "AVX" H 9750 1900 50  0001 C CNN "Manufacturer_Name"
-F 7 "SD2114S040S8R0" H 9750 1900 50  0001 C CNN "Manufacturer_Part_Number"
-F 8 "581-SD2114S040S8R0" H 9750 1900 50  0001 C CNN "Mouser Part Number"
-F 9 "" H 9750 1900 50  0001 C CNN "Mouser Price/Stock"
-	1    9750 1900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9900 1550 9900 1900
-Wire Wire Line
-	9600 1600 9600 1900
-$Comp
 L Device:D_Schottky D1
 U 1 1 6014A409
 P 4550 800
@@ -1496,6 +1308,9 @@ F 0 "Q1" H 6240 7046 50  0000 L CNN
 F 1 "KSC1815" H 6240 6955 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 6250 6925 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 6050 7000 50  0001 L CNN
+F 4 "ON Semiconductor / Fairchild" H 6050 7000 50  0001 C CNN "Manufacturer_Name"
+F 5 "KSC1815YTA" H 6050 7000 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "512-KSC1815YTA" H 6050 7000 50  0001 C CNN "Mouser Part Number"
 	1    6050 7000
 	1    0    0    -1  
 $EndComp
@@ -1537,47 +1352,17 @@ Wire Wire Line
 Wire Wire Line
 	800  7050 900  7050
 Wire Wire Line
-	900  6650 800  6650
-Wire Wire Line
 	1450 7050 1200 7050
 Wire Wire Line
 	1200 6850 1450 6850
 Wire Wire Line
 	1450 6650 1200 6650
 $Comp
-L Device:R R13
-U 1 1 5FF6A611
-P 1050 7050
-F 0 "R13" V 843 7050 50  0000 C CNN
-F 1 "200R" V 934 7050 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 980 7050 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 1050 7050 50  0001 C CNN
-F 4 "Vishay / Dale" H 1050 7050 50  0001 C CNN "Manufacturer_Name"
-F 5 "CRCW1206200RFKEA" H 1050 7050 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "71-CRCW1206-200-E3" H 1050 7050 50  0001 C CNN "Mouser Part Number"
-	1    1050 7050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5FF6A384
-P 1050 6850
-F 0 "R12" V 843 6850 50  0000 C CNN
-F 1 "200R" V 934 6850 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 980 6850 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 1050 6850 50  0001 C CNN
-F 4 "Vishay / Dale" H 1050 6850 50  0001 C CNN "Manufacturer_Name"
-F 5 "CRCW1206200RFKEA" H 1050 6850 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "71-CRCW1206-200-E3" H 1050 6850 50  0001 C CNN "Mouser Part Number"
-	1    1050 6850
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R11
 U 1 1 5FF69C98
 P 1050 6650
 F 0 "R11" V 843 6650 50  0000 C CNN
-F 1 "200R" V 934 6650 50  0000 C CNN
+F 1 "200R" V 934 6650 50  0001 C CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" V 980 6650 50  0001 C CNN
 F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 1050 6650 50  0001 C CNN
 F 4 "Vishay / Dale" H 1050 6650 50  0001 C CNN "Manufacturer_Name"
@@ -1605,7 +1390,10 @@ P 1600 6650
 F 0 "D2" H 1593 6866 50  0000 C CNN
 F 1 "LED" H 1593 6775 50  0000 C CNN
 F 2 "LEDs:LED_D5.0mm_FlatTop" H 1600 6650 50  0001 C CNN
-F 3 "~" H 1600 6650 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/239/lite-on_lite-s-a0003820128-1-1737731.pdf" H 1600 6650 50  0001 C CNN
+F 4 "Lite-On" H 1600 6650 50  0001 C CNN "Manufacturer_Name"
+F 5 "LTL-307GE" H 1600 6650 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "859-LTL-307GE" H 1600 6650 50  0001 C CNN "Mouser Part Number"
 	1    1600 6650
 	1    0    0    -1  
 $EndComp
@@ -1616,7 +1404,10 @@ P 1600 6850
 F 0 "D3" H 1593 7066 50  0000 C CNN
 F 1 "LED" H 1593 6975 50  0000 C CNN
 F 2 "LEDs:LED_D5.0mm_FlatTop" H 1600 6850 50  0001 C CNN
-F 3 "~" H 1600 6850 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/239/lite-on_lite-s-a0003820128-1-1737731.pdf" H 1600 6850 50  0001 C CNN
+F 4 "Lite-On" H 1600 6850 50  0001 C CNN "Manufacturer_Name"
+F 5 "LTL-307GE" H 1600 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "859-LTL-307GE" H 1600 6850 50  0001 C CNN "Mouser Part Number"
 	1    1600 6850
 	1    0    0    -1  
 $EndComp
@@ -1627,7 +1418,10 @@ P 1600 7050
 F 0 "D4" H 1593 7266 50  0000 C CNN
 F 1 "LED" H 1593 7175 50  0000 C CNN
 F 2 "LEDs:LED_D5.0mm_FlatTop" H 1600 7050 50  0001 C CNN
-F 3 "~" H 1600 7050 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/239/lite-on_lite-s-a0003820128-1-1737731.pdf" H 1600 7050 50  0001 C CNN
+F 4 "Lite-On" H 1600 7050 50  0001 C CNN "Manufacturer_Name"
+F 5 "LTL-307GE" H 1600 7050 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "859-LTL-307GE" H 1600 7050 50  0001 C CNN "Mouser Part Number"
 	1    1600 7050
 	1    0    0    -1  
 $EndComp
@@ -1667,139 +1461,119 @@ $EndComp
 $Comp
 L Device:C_Small C9
 U 1 1 600386A9
-P 8450 2900
-F 0 "C9" H 8542 2946 50  0000 L CNN
-F 1 "0.1uF" H 8542 2855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8450 2900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 8450 2900 50  0001 C CNN
-F 4 "Vishay / Vitramon" H 8450 2900 50  0001 C CNN "Manufacturer_Name"
-F 5 "VJ1206Y104KXXAC" H 8450 2900 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "77-VJ1206Y104KXXAC" H 8450 2900 50  0001 C CNN "Mouser Part Number"
-	1    8450 2900
+P 8550 4300
+F 0 "C9" H 8642 4346 50  0000 L CNN
+F 1 "0.1uF" H 8642 4255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8550 4300 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 8550 4300 50  0001 C CNN
+F 4 "Vishay / Vitramon" H 8550 4300 50  0001 C CNN "Manufacturer_Name"
+F 5 "VJ1206Y104KXXAC" H 8550 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "77-VJ1206Y104KXXAC" H 8550 4300 50  0001 C CNN "Mouser Part Number"
+	1    8550 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
 U 1 1 600391B7
-P 8150 2900
-F 0 "C8" H 8242 2946 50  0000 L CNN
-F 1 "0.1uF" H 8242 2855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8150 2900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 8150 2900 50  0001 C CNN
-F 4 "Vishay / Vitramon" H 8150 2900 50  0001 C CNN "Manufacturer_Name"
-F 5 "VJ1206Y104KXXAC" H 8150 2900 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "77-VJ1206Y104KXXAC" H 8150 2900 50  0001 C CNN "Mouser Part Number"
-	1    8150 2900
+P 8250 4300
+F 0 "C8" H 8342 4346 50  0000 L CNN
+F 1 "0.1uF" H 8342 4255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8250 4300 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 8250 4300 50  0001 C CNN
+F 4 "Vishay / Vitramon" H 8250 4300 50  0001 C CNN "Manufacturer_Name"
+F 5 "VJ1206Y104KXXAC" H 8250 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "77-VJ1206Y104KXXAC" H 8250 4300 50  0001 C CNN "Mouser Part Number"
+	1    8250 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C7
 U 1 1 6003957E
-P 7850 2900
-F 0 "C7" H 7942 2946 50  0000 L CNN
-F 1 "0.1uF" H 7942 2855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7850 2900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 7850 2900 50  0001 C CNN
-F 4 "Vishay / Vitramon" H 7850 2900 50  0001 C CNN "Manufacturer_Name"
-F 5 "VJ1206Y104KXXAC" H 7850 2900 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "77-VJ1206Y104KXXAC" H 7850 2900 50  0001 C CNN "Mouser Part Number"
-	1    7850 2900
+P 7950 4300
+F 0 "C7" H 8042 4346 50  0000 L CNN
+F 1 "0.1uF" H 8042 4255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7950 4300 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 7950 4300 50  0001 C CNN
+F 4 "Vishay / Vitramon" H 7950 4300 50  0001 C CNN "Manufacturer_Name"
+F 5 "VJ1206Y104KXXAC" H 7950 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "77-VJ1206Y104KXXAC" H 7950 4300 50  0001 C CNN "Mouser Part Number"
+	1    7950 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C6
 U 1 1 60055D79
-P 7400 2900
-F 0 "C6" H 7492 2946 50  0000 L CNN
-F 1 "0.1uF" H 7492 2855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7400 2900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 7400 2900 50  0001 C CNN
-F 4 "Vishay / Vitramon" H 7400 2900 50  0001 C CNN "Manufacturer_Name"
-F 5 "VJ1206Y104KXXAC" H 7400 2900 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "77-VJ1206Y104KXXAC" H 7400 2900 50  0001 C CNN "Mouser Part Number"
-	1    7400 2900
+P 7500 4300
+F 0 "C6" H 7592 4346 50  0000 L CNN
+F 1 "0.1uF" H 7592 4255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7500 4300 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 7500 4300 50  0001 C CNN
+F 4 "Vishay / Vitramon" H 7500 4300 50  0001 C CNN "Manufacturer_Name"
+F 5 "VJ1206Y104KXXAC" H 7500 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "77-VJ1206Y104KXXAC" H 7500 4300 50  0001 C CNN "Mouser Part Number"
+	1    7500 4300
 	1    0    0    -1  
 $EndComp
-Text Notes 8150 3200 0    50   ~ 0
+Text Notes 8250 4600 0    50   ~ 0
 MCP2562
-Text Notes 7750 3200 0    50   ~ 0
+Text Notes 7850 4600 0    50   ~ 0
 FRAM
-$Comp
-L Device:C_Small C5
-U 1 1 600BAE8E
-P 7050 2900
-F 0 "C5" H 7142 2946 50  0000 L CNN
-F 1 "0.1uF" H 7142 2855 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7050 2900 50  0001 C CNN
-F 3 "https://www.mouser.ch/datasheet/2/427/vjcommercialseries-1764145.pdf" H 7050 2900 50  0001 C CNN
-F 4 "Vishay / Vitramon" H 7050 2900 50  0001 C CNN "Manufacturer_Name"
-F 5 "VJ1206Y104KXXAC" H 7050 2900 50  0001 C CNN "Manufacturer_Part_Number"
-F 6 "77-VJ1206Y104KXXAC" H 7050 2900 50  0001 C CNN "Mouser Part Number"
-	1    7050 2900
-	1    0    0    -1  
-$EndComp
-Text Notes 7000 3200 0    50   ~ 0
+Text Notes 7100 4600 0    50   ~ 0
 ADC AGND/DGND
 $Comp
 L power:GND #PWR0120
 U 1 1 600DFF0D
-P 8700 3000
-F 0 "#PWR0120" H 8700 2750 50  0001 C CNN
-F 1 "GND" H 8705 2827 50  0000 C CNN
-F 2 "" H 8700 3000 50  0001 C CNN
-F 3 "" H 8700 3000 50  0001 C CNN
-	1    8700 3000
+P 8800 4400
+F 0 "#PWR0120" H 8800 4150 50  0001 C CNN
+F 1 "GND" H 8805 4227 50  0000 C CNN
+F 2 "" H 8800 4400 50  0001 C CNN
+F 3 "" H 8800 4400 50  0001 C CNN
+	1    8800 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0124
 U 1 1 600E03E5
-P 8700 2800
-F 0 "#PWR0124" H 8700 2650 50  0001 C CNN
-F 1 "+5V" H 8715 2973 50  0000 C CNN
-F 2 "" H 8700 2800 50  0001 C CNN
-F 3 "" H 8700 2800 50  0001 C CNN
-	1    8700 2800
+P 8800 4200
+F 0 "#PWR0124" H 8800 4050 50  0001 C CNN
+F 1 "+5V" H 8815 4373 50  0000 C CNN
+F 2 "" H 8800 4200 50  0001 C CNN
+F 3 "" H 8800 4200 50  0001 C CNN
+	1    8800 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8700 3000 8450 3000
+	8800 4400 8550 4400
 Wire Wire Line
-	8150 3000 8450 3000
-Connection ~ 8450 3000
-Connection ~ 8150 3000
+	8250 4400 8550 4400
+Connection ~ 8550 4400
+Connection ~ 8250 4400
 Wire Wire Line
-	7850 2800 8150 2800
+	7950 4200 8250 4200
 Wire Wire Line
-	8150 2800 8450 2800
-Connection ~ 8150 2800
+	8250 4200 8550 4200
+Connection ~ 8250 4200
 Wire Wire Line
-	8450 2800 8700 2800
-Connection ~ 8450 2800
+	8550 4200 8800 4200
+Connection ~ 8550 4200
 Wire Wire Line
-	7400 2800 7050 2800
-Wire Wire Line
-	7050 3000 7400 3000
-Wire Wire Line
-	7400 3000 7850 3000
-Connection ~ 7400 3000
-Connection ~ 7850 3000
+	7500 4400 7950 4400
+Connection ~ 7950 4400
 $Comp
 L power:+3V3 #PWR0125
 U 1 1 601AE96C
-P 7400 2750
-F 0 "#PWR0125" H 7400 2600 50  0001 C CNN
-F 1 "+3V3" H 7415 2923 50  0000 C CNN
-F 2 "" H 7400 2750 50  0001 C CNN
-F 3 "" H 7400 2750 50  0001 C CNN
-	1    7400 2750
+P 7500 4150
+F 0 "#PWR0125" H 7500 4000 50  0001 C CNN
+F 1 "+3V3" H 7515 4323 50  0000 C CNN
+F 2 "" H 7500 4150 50  0001 C CNN
+F 3 "" H 7500 4150 50  0001 C CNN
+	1    7500 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 2800 7400 2750
-Connection ~ 7400 2800
+	7500 4200 7500 4150
 Wire Wire Line
-	7850 3000 8150 3000
+	7950 4400 8250 4400
 $Comp
 L Device:R R19
 U 1 1 602225BF
@@ -1925,4 +1699,265 @@ Wire Wire Line
 	5850 7000 5750 7000
 Wire Wire Line
 	5450 7000 5400 7000
+Wire Wire Line
+	10050 2200 10250 2200
+Wire Wire Line
+	10250 2200 10250 2250
+Wire Wire Line
+	10250 2200 10450 2200
+Connection ~ 10250 2200
+Wire Wire Line
+	900  6650 800  6650
+$Comp
+L Device:R R13
+U 1 1 5FF6A611
+P 1050 7050
+F 0 "R13" V 843 7050 50  0000 C CNN
+F 1 "200R" V 934 7050 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 980 7050 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 1050 7050 50  0001 C CNN
+F 4 "Vishay / Dale" H 1050 7050 50  0001 C CNN "Manufacturer_Name"
+F 5 "CRCW1206200RFKEA" H 1050 7050 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "71-CRCW1206-200-E3" H 1050 7050 50  0001 C CNN "Mouser Part Number"
+	1    1050 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5FF6A384
+P 1050 6850
+F 0 "R12" V 843 6850 50  0000 C CNN
+F 1 "200R" V 934 6850 50  0001 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 980 6850 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 1050 6850 50  0001 C CNN
+F 4 "Vishay / Dale" H 1050 6850 50  0001 C CNN "Manufacturer_Name"
+F 5 "CRCW1206200RFKEA" H 1050 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "71-CRCW1206-200-E3" H 1050 6850 50  0001 C CNN "Mouser Part Number"
+	1    1050 6850
+	0    1    1    0   
+$EndComp
+Text Notes 7300 2300 0    50   ~ 0
+For JP1, you'll need a 2x1, 2.54mm Header strip\nKICAD BOM has only Jumper, Mouser BOM has them seperatly.
+Wire Wire Line
+	10450 1950 10250 1950
+Connection ~ 10450 1950
+Wire Wire Line
+	10450 2200 10450 1950
+Wire Wire Line
+	10050 1650 9900 1650
+Connection ~ 10050 1650
+Wire Wire Line
+	10050 1900 10050 1650
+Wire Wire Line
+	10500 1650 10050 1650
+Wire Wire Line
+	10250 1350 10250 1950
+$Comp
+L Device:C C5
+U 1 1 60144572
+P 10050 2050
+F 0 "C5" H 10165 2096 50  0000 L CNN
+F 1 "100uF" H 10165 2005 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x7.7" H 10088 1900 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/315/panasonic_05052020_Capacitor_Lytic_SMD_Halogen_Fre-1843155.pdf" H 10050 2050 50  0001 C CNN
+F 4 "Panasonic" H 10050 2050 50  0001 C CNN "Manufacturer_Name"
+F 5 "EEE-FTH101XAL" H 10050 2050 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "667-EEE-FTH101XAL" H 10050 2050 50  0001 C CNN "Mouser Part Number"
+	1    10050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1700 9600 2000
+Wire Wire Line
+	9900 1650 9900 2000
+$Comp
+L Device:D_Schottky D5
+U 1 1 601250AD
+P 9750 2000
+F 0 "D5" H 9750 1783 50  0000 C CNN
+F 1 "D_Schottky" H 9750 1874 50  0000 C CNN
+F 2 "Diodes_SMD:D_2114" H 9750 2000 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/40/schottky-776407.pdf" H 9750 2000 50  0001 C CNN
+F 4 "" H 9750 2000 50  0001 C CNN "MouserID"
+F 5 "" H 9750 2000 50  0001 C CNN "LCSCID"
+F 6 "AVX" H 9750 2000 50  0001 C CNN "Manufacturer_Name"
+F 7 "SD2114S040S8R0" H 9750 2000 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "581-SD2114S040S8R0" H 9750 2000 50  0001 C CNN "Mouser Part Number"
+F 9 "" H 9750 2000 50  0001 C CNN "Mouser Price/Stock"
+	1    9750 2000
+	-1   0    0    1   
+$EndComp
+Text Label 9200 1450 0    50   ~ 0
+Mod_CAN_N
+Text Label 9200 1250 0    50   ~ 0
+Mod_CAN_P
+Wire Wire Line
+	8650 1850 8650 1900
+Connection ~ 8650 1850
+Wire Wire Line
+	8650 1750 8650 1850
+Wire Wire Line
+	8150 1250 8450 1250
+Connection ~ 8150 1250
+Wire Wire Line
+	8150 1150 8450 1150
+Connection ~ 8150 1150
+Wire Wire Line
+	9700 1250 10500 1250
+Connection ~ 9700 1250
+Wire Wire Line
+	9700 850  9700 1250
+Wire Wire Line
+	9900 900  9900 850 
+Connection ~ 9900 1150
+Wire Wire Line
+	9900 1150 9900 1100
+$Comp
+L Device:R_Small R14
+U 1 1 6002C5F3
+P 9900 1000
+F 0 "R14" H 9959 1046 50  0000 L CNN
+F 1 "120R" H 9959 955 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9900 1000 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/427/crcwce3-1762584.pdf" H 9900 1000 50  0001 C CNN
+F 4 "Vishay / Dale" H 9900 1000 50  0001 C CNN "Manufacturer_Name"
+F 5 "CRCW1206120RFKEAC" H 9900 1000 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "71-CRCW1206120RFKEAC" H 9900 1000 50  0001 C CNN "Mouser Part Number"
+	1    9900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 6002BAEA
+P 9800 850
+F 0 "JP1" H 9800 1062 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9800 971 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 9800 850 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/222/SX1100-B-461401.pdf" H 9800 850 50  0001 C CNN
+F 4 "Kycon" H 9800 850 50  0001 C CNN "Manufacturer_Name"
+F 5 "SX1100-B" H 9800 850 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "806-SX1100-B" H 9800 850 50  0001 C CNN "Mouser Part Number"
+	1    9800 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 10250 1350
+Wire Wire Line
+	10800 1950 10450 1950
+Wire Wire Line
+	9150 1450 9900 1450
+Wire Wire Line
+	9150 1250 9700 1250
+NoConn ~ 10500 1750
+NoConn ~ 10500 1550
+NoConn ~ 10500 1450
+NoConn ~ 10500 950 
+Wire Wire Line
+	7850 1250 8150 1250
+Wire Wire Line
+	7850 1150 8150 1150
+Text GLabel 7850 1150 0    50   Input ~ 0
+Mod_CAN1_TX
+Text GLabel 7850 1250 0    50   Output ~ 0
+Mod_CAN1_RX
+Wire Wire Line
+	7450 1800 7450 1700
+Wire Wire Line
+	7650 1800 7450 1800
+Wire Wire Line
+	7650 1450 7650 1800
+Wire Wire Line
+	8150 1450 7650 1450
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 5FEE5DB0
+P 7450 1700
+F 0 "#PWR0113" H 7450 1550 50  0001 C CNN
+F 1 "+3V3" H 7465 1873 50  0000 C CNN
+F 2 "" H 7450 1700 50  0001 C CNN
+F 3 "" H 7450 1700 50  0001 C CNN
+	1    7450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1850 8650 1850
+Wire Wire Line
+	7800 1550 7800 1850
+Wire Wire Line
+	8150 1550 7800 1550
+$Comp
+L power:+24V #PWR0112
+U 1 1 5FEE00D3
+P 9600 1700
+F 0 "#PWR0112" H 9600 1550 50  0001 C CNN
+F 1 "+24V" H 9615 1873 50  0000 C CNN
+F 2 "" H 9600 1700 50  0001 C CNN
+F 3 "" H 9600 1700 50  0001 C CNN
+	1    9600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1050 10250 1350
+Wire Wire Line
+	10500 1050 10250 1050
+Wire Wire Line
+	10500 1350 10250 1350
+Wire Wire Line
+	9900 1150 10500 1150
+Wire Wire Line
+	9900 1450 9900 1150
+$Comp
+L Connector:DB9_Female_MountingHoles J2
+U 1 1 5FEDC114
+P 10800 1350
+F 0 "J2" H 10980 1306 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 10980 1261 50  0001 L CNN
+F 2 "SamacSys_Parts:D09S23A4GV00LF" H 10800 1350 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c01-8646-0755.pdf" H 10800 1350 50  0001 C CNN
+F 4 "Amphenol FCI " H 10800 1350 50  0001 C CNN "Manufacturer_Name"
+F 5 "D09S23A4GV00LF " H 10800 1350 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "649-D09S23A4GV00LF" H 10800 1350 50  0001 C CNN "Mouser Part Number"
+	1    10800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 900  8650 950 
+$Comp
+L power:GND #PWR0110
+U 1 1 5FED8279
+P 8650 1900
+F 0 "#PWR0110" H 8650 1650 50  0001 C CNN
+F 1 "GND" H 8655 1727 50  0000 C CNN
+F 2 "" H 8650 1900 50  0001 C CNN
+F 3 "" H 8650 1900 50  0001 C CNN
+	1    8650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5FED7903
+P 8650 900
+F 0 "#PWR0108" H 8650 750 50  0001 C CNN
+F 1 "+5V" H 8665 1073 50  0000 C CNN
+F 2 "" H 8650 900 50  0001 C CNN
+F 3 "" H 8650 900 50  0001 C CNN
+	1    8650 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:MCP2562-E-P U3
+U 1 1 5FEB93F9
+P 8650 1350
+F 0 "U3" H 8650 1839 50  0000 C CNN
+F 1 "MCP2562-E-P" H 8650 1840 50  0001 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 8650 850 50  0001 C CIN
+F 3 "https://www.mouser.ch/datasheet/2/268/20005167C-1512552.pdf" H 8650 1350 50  0001 C CNN
+F 4 "Microchip Technology " H 8650 1350 50  0001 C CNN "Manufacturer_Name"
+F 5 "MCP2562-E/P" H 8650 1350 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "579-MCP2562-E/P" H 8650 1350 50  0001 C CNN "Mouser Part Number"
+F 7 "" H 8650 1350 50  0001 C CNN "Mouser Price/Stock"
+	1    8650 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 2600 0    50   ~ 0
+Alternative to JP1, Costs more though\n611-SPA02B SIP Toggle switch\n
 $EndSCHEMATC
