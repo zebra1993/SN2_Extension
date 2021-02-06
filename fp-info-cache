@@ -1,4 +1,4 @@
-709609417319510
+716181330254953
 Battery_Holders
 Bulgin_BX0036_1xC
 
@@ -125,6 +125,20 @@ Seiko_MS621F
 0
 0
 0
+Blanket Github additions
+3.5mm_Hole
+
+
+0
+0
+0
+Blanket Github additions
+4.4mm_Hole
+
+
+0
+1
+1
 Buttons_Switches_SMD
 Nidec_Copal_SH-7010A
 
@@ -43476,6 +43490,13 @@ Connector
 0
 4
 4
+SamacSys_Parts
+TBL00925412GY2GY
+TBL009-254-12GY-2GY-1
+Connector
+0
+24
+24
 SamacSys_Parts
 TO270P460X1020X2008-3P
 TO-220

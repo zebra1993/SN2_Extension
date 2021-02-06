@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "Snapmaker2 CANbus extension"
 Date "2021-01-16"
 Rev "1"
@@ -317,7 +317,7 @@ Z-Axis2
 Text Notes 1750 3900 0    50   ~ 0
 Ambient
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J3
+L Samacsys:TBL009-254-02GY-2GY J3
 U 1 1 6006A4CD
 P 3600 1900
 F 0 "J3" H 4000 1535 50  0000 C CNN
@@ -337,7 +337,7 @@ Connection ~ 5450 2600
 Connection ~ 5150 2200
 Connection ~ 4850 1800
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J4
+L Samacsys:TBL009-254-02GY-2GY J4
 U 1 1 60089421
 P 3600 2300
 F 0 "J4" H 4000 1935 50  0000 C CNN
@@ -354,24 +354,24 @@ F 9 "TBL009-254-02GY-2GY" H 4250 1700 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J5
+L Samacsys:TBL009-254-02GY-2GY J5
 U 1 1 600898E9
 P 3600 2700
 F 0 "J5" H 4000 2335 50  0000 C CNN
 F 1 "TBL009-254-02GY-2GY" H 4000 2426 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 2800 50  0001 L CNN
+F 2 "TBL00925402GY2GY" H 4250 2800 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 2700 50  0001 L CNN
 F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 2600 50  0001 L CNN "Description"
 F 5 "10.5" H 4250 2500 50  0001 L CNN "Height"
 F 6 "490-TBL00925402GY2GY" H 4250 2400 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 2300 50  0001 L CNN "Mouser Price/Stock"
+F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D" H 4250 2300 50  0001 L CNN "Mouser Price/Stock"
 F 8 "CUI Devices" H 4250 2200 50  0001 L CNN "Manufacturer_Name"
 F 9 "TBL009-254-02GY-2GY" H 4250 2100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3600 2700
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J6
+L Samacsys:TBL009-254-02GY-2GY J6
 U 1 1 6008A026
 P 3600 3100
 F 0 "J6" H 4000 2735 50  0000 C CNN
@@ -388,7 +388,7 @@ F 9 "TBL009-254-02GY-2GY" H 4250 2500 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J7
+L Samacsys:TBL009-254-02GY-2GY J7
 U 1 1 6008A72C
 P 3600 3500
 F 0 "J7" H 4000 3135 50  0000 C CNN
@@ -405,7 +405,7 @@ F 9 "TBL009-254-02GY-2GY" H 4250 2900 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J8
+L Samacsys:TBL009-254-02GY-2GY J8
 U 1 1 6008AF27
 P 3600 3900
 F 0 "J8" H 4000 3535 50  0000 C CNN
@@ -422,7 +422,7 @@ F 9 "TBL009-254-02GY-2GY" H 4250 3300 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J9
+L Samacsys:TBL009-254-02GY-2GY J9
 U 1 1 6008B333
 P 3600 4300
 F 0 "J9" H 4000 3935 50  0000 C CNN
@@ -439,7 +439,7 @@ F 9 "TBL009-254-02GY-2GY" H 4250 3700 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:TBL009-254-02GY-2GY J10
+L Samacsys:TBL009-254-02GY-2GY J10
 U 1 1 6008B85A
 P 3600 4700
 F 0 "J10" H 4000 4335 50  0000 C CNN
