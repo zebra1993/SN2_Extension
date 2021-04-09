@@ -16,5 +16,5 @@ $EndDescr
 Text Notes 700  2200 0    50   ~ 0
 Rev1:\nInitial version
 Text Notes 1450 2200 0    50   ~ 0
-Rev2:\nTODO:\nMove OLED Header to the left as USB Cable is blocked from pluggin in \nMove DCDCconverter to the rght, USB cable again\nChange Footprint fro Buzzer as its to small\nAdd Discharge resistors for Bulkcaps\nMove Ser2 and RGB Headers in same line\nRotEnc_A and B are PULLUP in the libary\n\nChanged:\nRemove Silkscreen for Resistor values for LED as they are user changeable\n
+Rev2:\nTODO:\n\nChanged:\nRemove Silkscreen for Resistor values for LED as they are user changeable\nAdd Discharge resistors for Bulkcaps\nMove OLED Header to the left as USB Cable is blocked from pluggin in \nMove DCDCconverter to the rght, USB cable again\nRotEnc_A and B are PULLUP in the libary\nTVS for CAN1 and CAN2\nChange Footprint for Buzzer as its to small\nMove Ser2 and RGB Headers in same line\nADC now to D-Sub instead of Terminals\nOptocoupler for Potential free contact
 $EndSCHEMATC

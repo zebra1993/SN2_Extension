@@ -179,9 +179,10 @@ L Device:R R9
 U 1 1 5FF222A3
 P 6650 1450
 F 0 "R9" H 6720 1496 50  0000 L CNN
-F 1 "Res" H 6720 1405 50  0000 L CNN
+F 1 "27k" H 6720 1405 50  0000 L CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" V 6580 1450 50  0001 C CNN
 F 3 "~" H 6650 1450 50  0001 C CNN
+F 4 "71-CRCW1206-27K-E3" H 6650 1450 50  0001 C CNN "Mouser Part Number"
 	1    6650 1450
 	1    0    0    -1  
 $EndComp
@@ -190,9 +191,10 @@ L Device:R R10
 U 1 1 5FF22517
 P 6950 1450
 F 0 "R10" H 7020 1496 50  0000 L CNN
-F 1 "Res" H 7020 1405 50  0000 L CNN
+F 1 "27k" H 7020 1405 50  0000 L CNN
 F 2 "Resistors_SMD:R_1206_HandSoldering" V 6880 1450 50  0001 C CNN
 F 3 "~" H 6950 1450 50  0001 C CNN
+F 4 "71-CRCW1206-27K-E3" H 6950 1450 50  0001 C CNN "Mouser Part Number"
 	1    6950 1450
 	1    0    0    -1  
 $EndComp
@@ -266,309 +268,452 @@ Wire Wire Line
 Wire Wire Line
 	5450 2600 8400 2600
 Wire Wire Line
-	5750 3000 5750 2700
-Wire Wire Line
 	8400 2700 5750 2700
-Connection ~ 5750 2700
 Wire Wire Line
 	5750 2700 5750 1600
 Wire Wire Line
-	6050 3400 6050 2800
-Wire Wire Line
 	8400 2800 6050 2800
-Connection ~ 6050 2800
 Wire Wire Line
 	6050 2800 6050 1600
 Wire Wire Line
-	6350 3800 6350 2900
-Wire Wire Line
 	8400 2900 6350 2900
-Connection ~ 6350 2900
 Wire Wire Line
 	6350 2900 6350 1600
 Wire Wire Line
-	6650 4200 6650 3000
-Wire Wire Line
 	8400 3000 6650 3000
-Connection ~ 6650 3000
 Wire Wire Line
 	6650 3000 6650 1600
 Wire Wire Line
-	6950 4600 6950 3100
-Wire Wire Line
 	8400 3100 6950 3100
-Connection ~ 6950 3100
 Wire Wire Line
 	6950 3100 6950 1600
-Text Notes 1750 4300 0    50   ~ 0
+Text Notes 4100 5000 0    50   ~ 0
 Spare1
-Text Notes 1750 4700 0    50   ~ 0
+Text Notes 4100 5550 0    50   ~ 0
 Spare2
-Text Notes 1750 1850 0    50   ~ 0
+Text Notes 4100 1900 0    50   ~ 0
 X-Axis
-Text Notes 1750 2250 0    50   ~ 0
+Text Notes 4100 2450 0    50   ~ 0
 Y-Axis1
-Text Notes 1750 2650 0    50   ~ 0
+Text Notes 4100 2950 0    50   ~ 0
 Y-Axis2
-Text Notes 1750 3100 0    50   ~ 0
+Text Notes 4100 3550 0    50   ~ 0
 Z-Axis1
-Text Notes 1750 3500 0    50   ~ 0
+Text Notes 4100 4050 0    50   ~ 0
 Z-Axis2
-Text Notes 1750 3900 0    50   ~ 0
+Text Notes 4100 4550 0    50   ~ 0
 Ambient
 $Comp
-L Samacsys:TBL009-254-02GY-2GY J3
-U 1 1 6006A4CD
-P 3600 1900
-F 0 "J3" H 4000 1535 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 1626 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 2000 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 1900 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 1800 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 1700 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 1600 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 1500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 1400 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 1300 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 1900
-	-1   0    0    1   
+L power:GND #PWR?
+U 1 1 6008E4F5
+P 3900 6150
+AR Path="/6008E4F5" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0E871/6008E4F5" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 3900 5900 50  0001 C CNN
+F 1 "GND" H 3905 5977 50  0000 C CNN
+F 2 "" H 3900 6150 50  0001 C CNN
+F 3 "" H 3900 6150 50  0001 C CNN
+	1    3900 6150
+	-1   0    0    -1  
 $EndComp
-Connection ~ 5450 2600
-Connection ~ 5150 2200
+Wire Wire Line
+	3900 6150 3900 6000
+Wire Wire Line
+	4350 6150 4350 6000
+Wire Wire Line
+	4350 6000 3900 6000
+Wire Wire Line
+	4350 5750 4350 6000
+Connection ~ 4350 6000
+Wire Wire Line
+	4750 5850 4750 5750
+Wire Wire Line
+	4850 1800 4850 5850
 Connection ~ 4850 1800
+Wire Wire Line
+	4950 2200 5150 2200
+Wire Wire Line
+	4950 2200 4950 5850
+Connection ~ 5150 2200
+Wire Wire Line
+	5050 2600 5450 2600
+Wire Wire Line
+	5050 2600 5050 5850
+Connection ~ 5450 2600
+Wire Wire Line
+	5150 2700 5750 2700
+Wire Wire Line
+	5150 2700 5150 5850
+Connection ~ 5750 2700
+Wire Wire Line
+	5250 2800 6050 2800
+Wire Wire Line
+	5250 2800 5250 5850
+Connection ~ 6050 2800
+Wire Wire Line
+	5350 2900 6350 2900
+Wire Wire Line
+	5350 2900 5350 5850
+Connection ~ 6350 2900
+Wire Wire Line
+	5450 3000 6650 3000
+Wire Wire Line
+	5450 3000 5450 5850
+Connection ~ 6650 3000
+Wire Wire Line
+	5550 3100 6950 3100
+Wire Wire Line
+	5550 3100 5550 5850
+Connection ~ 6950 3100
+Wire Wire Line
+	4350 6150 4550 6150
+Wire Wire Line
+	4350 5750 4750 5750
 $Comp
-L Samacsys:TBL009-254-02GY-2GY J4
-U 1 1 60089421
-P 3600 2300
-F 0 "J4" H 4000 1935 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 2026 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 2400 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 2300 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 2200 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 2100 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 2000 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 1900 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 1800 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 1700 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 2300
-	-1   0    0    1   
+L Connector:DB9_Male_MountingHoles J?
+U 1 1 6032F34B
+P 2250 6150
+AR Path="/6032F34B" Ref="J?"  Part="1" 
+AR Path="/5FF0E871/6032F34B" Ref="J3"  Part="1" 
+F 0 "J3" H 2429 6105 50  0000 L CNN
+F 1 "DB9_Male_MountingHoles" H 2430 6150 50  0001 L CNN
+F 2 "SamacSys_Parts:D09P23A4GV00LF" H 2250 6150 50  0001 C CNN
+F 3 "https://www.mouser.ch/datasheet/2/18/c01-8646-0743-1303348.pdf" H 2250 6150 50  0001 C CNN
+F 4 "Amphenol FCI " H 2250 6150 50  0001 C CNN "Manufacturer_Name"
+F 5 "D09P23A4GV00LF " H 2250 6150 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "649-D09P23A4GV00LF" H 2250 6150 50  0001 C CNN "Mouser Part Number"
+	1    2250 6150
+	0    -1   1    0   
 $EndComp
+Wire Wire Line
+	1850 5850 1600 5850
+Wire Wire Line
+	1600 5850 1600 6550
+Wire Wire Line
+	1600 6550 3250 6550
+Wire Wire Line
+	3250 6000 3900 6000
+Connection ~ 3900 6000
 $Comp
-L Samacsys:TBL009-254-02GY-2GY J5
-U 1 1 600898E9
-P 3600 2700
-F 0 "J5" H 4000 2335 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 2426 50  0000 C CNN
-F 2 "TBL00925402GY2GY" H 4250 2800 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 2700 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 2600 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 2500 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 2400 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/TBL009-254-02GY-2GY/?qs=UXgszm6BlbEjVz5a2Fsubg%3D%3D" H 4250 2300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 2200 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 2100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 2700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Samacsys:TBL009-254-02GY-2GY J6
-U 1 1 6008A026
-P 3600 3100
-F 0 "J6" H 4000 2735 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 2826 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 3200 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 3100 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 3000 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 2900 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 2800 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 2700 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 2600 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 2500 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 3100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Samacsys:TBL009-254-02GY-2GY J7
-U 1 1 6008A72C
-P 3600 3500
-F 0 "J7" H 4000 3135 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 3226 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 3600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 3500 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 3400 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 3300 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 3200 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 3100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 3000 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 2900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Samacsys:TBL009-254-02GY-2GY J8
-U 1 1 6008AF27
-P 3600 3900
-F 0 "J8" H 4000 3535 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 3626 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 4000 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 3900 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 3800 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 3700 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 3600 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 3500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 3400 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 3300 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Samacsys:TBL009-254-02GY-2GY J9
-U 1 1 6008B333
-P 3600 4300
-F 0 "J9" H 4000 3935 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 4026 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 4400 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 4300 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 4200 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 4100 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 4000 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 3900 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 3800 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 3700 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 4300
+L Samacsys:TBL009-254-02GY-2GY J17
+U 1 1 60352355
+P 3750 5550
+AR Path="/5FF0E871/60352355" Ref="J17"  Part="1" 
+AR Path="/60352355" Ref="J?"  Part="1" 
+F 0 "J17" H 4150 5185 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 5276 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 5650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 5550 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 5450 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 5350 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 5250 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 5150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 5050 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 4950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 5550
 	-1   0    0    1   
 $EndComp
 $Comp
 L Samacsys:TBL009-254-02GY-2GY J10
-U 1 1 6008B85A
-P 3600 4700
-F 0 "J10" H 4000 4335 50  0000 C CNN
-F 1 "TBL009-254-02GY-2GY" H 4000 4426 50  0000 C CNN
-F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4250 4800 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4250 4700 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4250 4600 50  0001 L CNN "Description"
-F 5 "10.5" H 4250 4500 50  0001 L CNN "Height"
-F 6 "490-TBL00925402GY2GY" H 4250 4400 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 4250 4300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 4250 4200 50  0001 L CNN "Manufacturer_Name"
-F 9 "TBL009-254-02GY-2GY" H 4250 4100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3600 4700
+U 1 1 6036130E
+P 3750 5050
+AR Path="/5FF0E871/6036130E" Ref="J10"  Part="1" 
+AR Path="/6036130E" Ref="J?"  Part="1" 
+F 0 "J10" H 4150 4685 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 4776 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 5150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 5050 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 4950 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 4850 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 4750 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 4650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 4550 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 4450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 5050
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 6008E4F5
-P 2500 5250
-AR Path="/6008E4F5" Ref="#PWR?"  Part="1" 
-AR Path="/5FF0E871/6008E4F5" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 2500 5000 50  0001 C CNN
-F 1 "GND" H 2505 5077 50  0000 C CNN
-F 2 "" H 2500 5250 50  0001 C CNN
-F 3 "" H 2500 5250 50  0001 C CNN
-	1    2500 5250
-	-1   0    0    -1  
+L Samacsys:TBL009-254-02GY-2GY J9
+U 1 1 6036180B
+P 3750 4550
+AR Path="/5FF0E871/6036180B" Ref="J9"  Part="1" 
+AR Path="/6036180B" Ref="J?"  Part="1" 
+F 0 "J9" H 4150 4185 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 4276 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 4650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 4550 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 4450 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 4350 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 4250 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 4150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 4050 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 3950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Samacsys:TBL009-254-02GY-2GY J8
+U 1 1 60361F93
+P 3750 4050
+AR Path="/5FF0E871/60361F93" Ref="J8"  Part="1" 
+AR Path="/60361F93" Ref="J?"  Part="1" 
+F 0 "J8" H 4150 3685 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 3776 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 4150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 4050 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 3950 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 3850 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 3750 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 3650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 3550 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 3450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Samacsys:TBL009-254-02GY-2GY J7
+U 1 1 6036248C
+P 3750 3550
+AR Path="/5FF0E871/6036248C" Ref="J7"  Part="1" 
+AR Path="/6036248C" Ref="J?"  Part="1" 
+F 0 "J7" H 4150 3185 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 3276 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 3550 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 3450 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 3350 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Samacsys:TBL009-254-02GY-2GY J6
+U 1 1 603629DD
+P 3750 3000
+AR Path="/5FF0E871/603629DD" Ref="J6"  Part="1" 
+AR Path="/603629DD" Ref="J?"  Part="1" 
+F 0 "J6" H 4150 2635 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 2726 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 3100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 3000 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 2900 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 2800 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 2700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 2600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 2500 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 2400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Samacsys:TBL009-254-02GY-2GY J5
+U 1 1 60362E06
+P 3750 2450
+AR Path="/5FF0E871/60362E06" Ref="J5"  Part="1" 
+AR Path="/60362E06" Ref="J?"  Part="1" 
+F 0 "J5" H 4150 2085 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 2176 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 2550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 2450 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 2350 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 2250 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 2150 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 2050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 1950 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 1850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Samacsys:TBL009-254-02GY-2GY J4
+U 1 1 6036315F
+P 3750 1900
+AR Path="/5FF0E871/6036315F" Ref="J4"  Part="1" 
+AR Path="/6036315F" Ref="J?"  Part="1" 
+F 0 "J4" H 4150 1535 50  0000 C CNN
+F 1 "TBL009-254-02GY-2GY" H 4150 1626 50  0001 C CNN
+F 2 "SamacSys_Parts:TBL00925402GY2GY" H 4400 2000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TBL009-254-02GY-2GY.pdf" H 4400 1900 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screwless, 2.54, Horizontal, 2, Gray w Gray Button" H 4400 1800 50  0001 L CNN "Description"
+F 5 "10.5" H 4400 1700 50  0001 L CNN "Height"
+F 6 "490-TBL00925402GY2GY" H 4400 1600 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4400 1500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 4400 1400 50  0001 L CNN "Manufacturer_Name"
+F 9 "TBL009-254-02GY-2GY" H 4400 1300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3750 1900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2500 5250 2500 4600
+	3750 1800 3750 1850
 Wire Wire Line
-	2500 1800 2800 1800
+	3750 2450 3750 2400
 Wire Wire Line
-	2800 1900 2800 1800
-Connection ~ 2800 1800
+	3250 6000 3250 6150
 Wire Wire Line
-	2800 2300 2800 2200
+	2850 6150 3250 6150
+Connection ~ 3250 6150
 Wire Wire Line
-	2800 2600 2800 2700
+	3250 6150 3250 6550
 Wire Wire Line
-	2800 3000 2800 3100
+	2650 5850 2650 5500
 Wire Wire Line
-	2800 3800 2800 3900
+	2650 5500 2950 5500
 Wire Wire Line
-	2800 4200 2800 4300
+	2950 5450 2950 5500
 Wire Wire Line
-	2800 4600 2800 4700
+	2950 4950 2950 5000
 Wire Wire Line
-	2800 4600 2500 4600
-Connection ~ 2800 4600
-Connection ~ 2500 4600
+	2950 4450 2950 4500
 Wire Wire Line
-	2500 4600 2500 4200
+	2950 3950 2950 4000
 Wire Wire Line
-	2800 4200 2500 4200
-Connection ~ 2800 4200
-Connection ~ 2500 4200
+	2950 3450 2950 3500
 Wire Wire Line
-	2800 3400 2800 3500
+	2950 2900 2950 2950
 Wire Wire Line
-	2500 4200 2500 3800
+	2950 2350 2950 2400
 Wire Wire Line
-	2800 3400 2500 3400
-Connection ~ 2800 3400
-Connection ~ 2500 3400
+	2950 1800 2950 1850
 Wire Wire Line
-	2500 3400 2500 3000
+	3750 2900 3750 2950
 Wire Wire Line
-	2800 3800 2500 3800
-Connection ~ 2800 3800
-Connection ~ 2500 3800
+	3750 3450 3750 3500
 Wire Wire Line
-	2500 3800 2500 3400
+	3750 3950 3750 4000
 Wire Wire Line
-	2800 3000 2500 3000
-Connection ~ 2800 3000
-Connection ~ 2500 3000
+	3750 4450 3750 4500
 Wire Wire Line
-	2500 3000 2500 2600
+	3750 4950 3750 5000
 Wire Wire Line
-	2800 2600 2500 2600
-Connection ~ 2800 2600
-Connection ~ 2500 2600
+	3750 5450 3750 5500
 Wire Wire Line
-	2500 2600 2500 2200
+	3750 1850 3900 1850
 Wire Wire Line
-	2800 2200 2500 2200
-Connection ~ 2800 2200
-Connection ~ 2500 2200
+	3900 1850 3900 2400
+Connection ~ 3750 1850
 Wire Wire Line
-	2500 2200 2500 1800
+	3750 1850 3750 1900
 Wire Wire Line
-	3600 1900 3600 1800
+	3750 5500 3900 5500
+Connection ~ 3750 5500
 Wire Wire Line
-	3600 1800 4850 1800
-Connection ~ 3600 1800
+	3750 5500 3750 5550
+Connection ~ 3900 5500
 Wire Wire Line
-	3600 2200 5150 2200
+	3900 5500 3900 6000
 Wire Wire Line
-	3600 2300 3600 2200
-Connection ~ 3600 2200
+	3750 5000 3900 5000
+Connection ~ 3750 5000
 Wire Wire Line
-	3600 2600 5450 2600
+	3750 5000 3750 5050
+Connection ~ 3900 5000
 Wire Wire Line
-	3600 2600 3600 2700
-Connection ~ 3600 2600
+	3900 5000 3900 5500
 Wire Wire Line
-	3600 3000 5750 3000
+	3750 4500 3900 4500
+Connection ~ 3750 4500
 Wire Wire Line
-	3600 3100 3600 3000
-Connection ~ 3600 3000
+	3750 4500 3750 4550
+Connection ~ 3900 4500
 Wire Wire Line
-	3600 3400 6050 3400
+	3900 4500 3900 5000
 Wire Wire Line
-	3600 3400 3600 3500
-Connection ~ 3600 3400
+	3750 4000 3900 4000
+Connection ~ 3750 4000
 Wire Wire Line
-	3600 3800 6350 3800
+	3750 4000 3750 4050
+Connection ~ 3900 4000
 Wire Wire Line
-	3600 3800 3600 3900
-Connection ~ 3600 3800
+	3900 4000 3900 4500
 Wire Wire Line
-	3600 4200 6650 4200
+	3750 3500 3900 3500
+Connection ~ 3750 3500
 Wire Wire Line
-	3600 4200 3600 4300
-Connection ~ 3600 4200
+	3750 3500 3750 3550
+Connection ~ 3900 3500
 Wire Wire Line
-	3600 4600 6950 4600
+	3900 3500 3900 4000
 Wire Wire Line
-	3600 4700 3600 4600
-Connection ~ 3600 4600
+	3750 2950 3900 2950
+Connection ~ 3750 2950
+Wire Wire Line
+	3750 2950 3750 3000
+Connection ~ 3900 2950
+Wire Wire Line
+	3900 2950 3900 3500
+Wire Wire Line
+	3750 2400 3900 2400
+Connection ~ 3750 2400
+Wire Wire Line
+	3750 2400 3750 2350
+Connection ~ 3900 2400
+Wire Wire Line
+	3900 2400 3900 2950
+Connection ~ 2950 5500
+Wire Wire Line
+	2950 5500 2950 5550
+Wire Wire Line
+	2950 1850 1950 1850
+Wire Wire Line
+	1950 1850 1950 5850
+Connection ~ 2950 1850
+Wire Wire Line
+	2950 1850 2950 1900
+Wire Wire Line
+	2050 2400 2950 2400
+Wire Wire Line
+	2050 2400 2050 5850
+Connection ~ 2950 2400
+Wire Wire Line
+	2950 2400 2950 2450
+Wire Wire Line
+	2150 2950 2950 2950
+Wire Wire Line
+	2150 2950 2150 5850
+Connection ~ 2950 2950
+Wire Wire Line
+	2950 2950 2950 3000
+Wire Wire Line
+	2950 3500 2250 3500
+Wire Wire Line
+	2250 3500 2250 5850
+Connection ~ 2950 3500
+Wire Wire Line
+	2950 3500 2950 3550
+Wire Wire Line
+	2950 4000 2350 4000
+Wire Wire Line
+	2350 4000 2350 5850
+Connection ~ 2950 4000
+Wire Wire Line
+	2950 4000 2950 4050
+Wire Wire Line
+	2950 4500 2450 4500
+Wire Wire Line
+	2450 4500 2450 5850
+Connection ~ 2950 4500
+Wire Wire Line
+	2950 4500 2950 4550
+Wire Wire Line
+	2950 5000 2550 5000
+Wire Wire Line
+	2550 5000 2550 5850
+Connection ~ 2950 5000
+Wire Wire Line
+	2950 5000 2950 5050
+$Comp
+L Connector:DB9_Female_MountingHoles J15
+U 1 1 6037C4A1
+P 5150 6150
+F 0 "J15" V 5022 6705 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" V 5113 6705 50  0000 L CNN
+F 2 "SamacSys_Parts:D09S23A4GV00LF" H 5150 6150 50  0001 C CNN
+F 3 " ~" H 5150 6150 50  0001 C CNN
+F 4 "649-D09S23A4GV00LF" H 5150 6150 50  0001 C CNN "Mouser Part Number"
+	1    5150 6150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

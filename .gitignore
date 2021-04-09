@@ -1,8 +1,7 @@
-
-ADC.sch-bak
-ADC.bak
-SNModule.bak
-SNModule.kicad_pcb-bak
-SNModule.sch-bak
 fp-info-cache
 *.sch-bak
+*.gbr
+
+*.kicad_pcb-bak
+*.kicad_pcb
+*.gbr

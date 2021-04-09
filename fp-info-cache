@@ -1,4 +1,4 @@
-716181330254953
+719557078347467
 Battery_Holders
 Bulgin_BX0036_1xC
 
@@ -137,8 +137,15 @@ Blanket Github additions
 
 
 0
-1
-1
+0
+0
+Blanket Github additions
+Buzzer_TDK_12.2x6.5RM5
+Generic Buzzer, D12mm height 9.5mm with RM7.6mm
+buzzer
+0
+2
+2
 Buttons_Switches_SMD
 Nidec_Copal_SH-7010A
 
@@ -43477,12 +43484,26 @@ Integrated Circuit
 20
 20
 SamacSys_Parts
+PS1240P02BT
+PS1240P02BT
+Loudspeaker or Buzzer
+0
+2
+2
+SamacSys_Parts
 RS207M
 RS-2M
 Bridge Rectifier
 0
 4
 4
+SamacSys_Parts
+SOT95P230X117-3N
+CDSOT23-T24CAN
+TVS Diode (Bi-directional)
+0
+3
+3
 SamacSys_Parts
 TBL00925402GY2GY
 TBL009-254-02GY-2GY-4
